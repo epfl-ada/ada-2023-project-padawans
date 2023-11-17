@@ -5,25 +5,28 @@ import spacy
 
 
 def processing():
-    df_plot_summaries = pd.read_csv('MovieSummaries/plot_summaries.txt', sep='\t', names = ['WikipediaMovieID', 'PlotSummaries'], index_col = ['WikipediaMovieID'])
+    df_plot_summaries = pd.read_csv('data/MovieSummaries/plot_summaries.txt', sep='\t', names = ['WikipediaMovieID', 'PlotSummaries'], index_col = ['WikipediaMovieID'])
     """    df_character = pd.read_csv("MovieSummaries/character.metadata.tsv", sep='\t', names = ['WikipediaMovieID', 'FreebaseMovieID', 'MovieReleaseDate', 'CharacterName', 
                                                                         'ActorDateOfBirth', 'ActorGender', 'ActorHeight', 'ActorEthnicity', 
                                                                         'ActorName', 'ActorAgeAtMovieRelease','FreebaseCharacter', 
                                                                         'FreebaseCharacterID', 'FreebaseActorID'], index_col = ['WikipediaMovieID'])"""
-    df_movies = pd.read_csv("MovieSummaries/movie.metadata.tsv", sep='\t', header = None, names = ['WikipediaMovieID', 'FreebaseMovieID', 'MovieName', 
+    df_movies = pd.read_csv("data/MovieSummaries/movie.metadata.tsv", sep='\t', header = None, names = ['WikipediaMovieID', 'FreebaseMovieID', 'MovieName', 
                                                                                         'MovieReleaseDate', 'MovieBoxOfficeRevenue',
                                                                                         'MovieRuntime', 'MovieLanguages', 'MovieCountries',
                                                                                         'MovieGenres'], index_col = ['WikipediaMovieID'])
 
 
-    df_movies['MovieReleaseDate'] = pd.to_datetime(df_movies['MovieReleaseDate'], format='%Y-%m-%d', errors='coerce').dt.year.astype('Int64')
+    df_movies['MovieReleaseDate'] = df_movies['MovieReleaseDate'].str.extract(r'^(.{4})')
+    df_movies = df_movies.dropna(subset='MovieReleaseDate')
+    df_movies['MovieReleaseDate'] = df_movies['MovieReleaseDate'].astype("Int64")
+    df_movies = df_movies[df_movies.MovieReleaseDate >= 1800]
     df_movies = pd.merge(df_movies, df_plot_summaries, how='left', on ='WikipediaMovieID')
 
 
     # Load the CSV files into pandas DataFrames
-    rating = pd.read_csv('data/ratings.csv')
-    links = pd.read_csv('data/links.csv')
-    movies = pd.read_csv('data/movies_metadata.csv', low_memory=False)
+    rating = pd.read_csv('data/KaggleMovies/ratings.csv')
+    links = pd.read_csv('data/KaggleMovies/links.csv')
+    movies = pd.read_csv('data/KaggleMovies/movies_metadata.csv', low_memory=False)
 
 
     # Load spaCy model with disabled components for efficiency
@@ -83,7 +86,7 @@ def processing():
 
     merged_df = pd.merge(merged_df, df_movies, how= 'outer', on =['original_title', 'release_date'])
     # Save the merged DataFrame to a new CSV file
-    merged_df.to_csv('data/merged_file.csv', index=False)
+    merged_df.to_csv('data/merged_file.csv',index=None)
 
 
 def main():
