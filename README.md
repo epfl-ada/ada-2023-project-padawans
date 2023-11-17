@@ -26,9 +26,11 @@ We want to investigate the extent to which movies serve as mirrors to the social
   - Focus on the years 1900 to 2010 within the 20th and beginning of the 21st century.
 
 - **For Q1 - Correlation Analysis of Genres and Socio-Political Events:**
-  - Plot the number of movies per genre and per year.
+  - Plot the number and percentage of movies per genre and per year.
   - Visualize the evolution of genres over time (e.g., using bar plots, line plots) to identify trends.
-  - Perform correlation analysis to explore connections between genre popularity and key socio-political events.
+  - Visualize the box office shares of movie genres over time.
+  - Perform correlation analysis to explore connections between genres.
+  - Perform regression analysis to identify which genres can explain the boxoffice or ratings of a movie and see the evolution of genre coefficients through time.
 
 - **For Q2 - Analysis of Socio-Political Themes:**
   - Analyze movie plots using NLP or similarity search to identify occurrences of defined socio-political themes.
@@ -47,7 +49,7 @@ We want to investigate the extent to which movies serve as mirrors to the social
   - Apply topic modeling techniques (e.g., LDA, NMF) to identify key themes within plot summaries.
   - Analyze sentiment trends over time.
   - Investigate correlations between identified themes and sentiment.
-- **For Q5**:
+- **For Q5 - Ratings analysis of socio-political themed movies**:
   - Define keywords associated with socio-political themes
   - Check if any of the socio-political keywords appear in the plot summary and genres.
   - Compare the average ratings of movies in both categories.
