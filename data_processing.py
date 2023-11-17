@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+import spacy
+
 
 
 def processing():
@@ -7,6 +9,26 @@ def processing():
     rating = pd.read_csv('data/ratings.csv')
     links = pd.read_csv('data/links.csv')
     movies = pd.read_csv('data/movies_metadata.csv')
+    summaries = pd.read_csv('data/plot_summaries.txt',header=None, names=['Wikipedia_ID','Summary'])
+    nlp = spacy.load("en_core_web_sm")
+
+    def process_text(summary):
+        def is_token_allowed(token):
+            return bool(
+            token
+            and str(token).strip()
+            and token.pos_ in ["ADJ" ,"PROPN","NOUN"]
+            and not token.is_stop
+            and not token.is_punct
+            )
+    
+        def preprocess_token(token):
+            return token.lemma_.strip().lower()
+    
+        # Process the text with spaCy
+        doc = nlp(summary)
+        return [preprocess_token(token) for token in doc if is_token_allowed(token)]
+    
 
     # Group by 'id' and calculate the average rating for each group
     average_ratings = rating.groupby('movieId')['rating'].agg(np.nanmean).reset_index()
@@ -25,6 +47,11 @@ def processing():
 
     merged_df = pd.merge(merged_df, movies, on='imdb_id', how='inner')
 
+    ### 20 minutes long 
+    #summaries['tokens']= sm['Summary'].apply(lambda x : process_text(x))
+    
+    #pd.merge(merged_df, summaries, on='Wikipedia_ID', how='left')
+   
 
     # Save the merged DataFrame to a new CSV file
     merged_df.to_csv('data/merged_file.csv', index=False)
