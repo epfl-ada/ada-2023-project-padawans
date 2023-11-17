@@ -14,12 +14,14 @@ We want to investigate the extent to which movies serve as mirrors to the social
 4. Are there patterns in movie plot summaries that correlate with significant social or political events of their respective time periods?
 5. How does the critical reception and recognition of movies with explicit socio-political content compare to those focused on entertainment or aesthetics?
 
+
+
 **Methods:**
-- **Data Preparation:**
+- **Data Preparation and Datasets:**
   - Evaluate the extent of missing data in relevant movie information (genres, release date, box office revenue, rating, etc.).
   - Address the high proportion of missing box office data by incorporating additional datasets from the TMDb API.
   - Clean and insert socio-political key events into the movie information dataframe.
-
+  - Datasets: CMU datset + IMDB dataset + Movie Lense 25M
 - **Time Period Selection:**
   - Focus on the years 1900 to 2010 within the 20th and beginning of the 21st century.
 
@@ -53,7 +55,14 @@ We want to investigate the extent to which movies serve as mirrors to the social
   - Conduct statistical tests (like t-tests or ANOVA) to see if there are significant differences in ratings between the two categories.
 
 **Proposed Timeline**
-Step 1 - Answer to the five questions and give 
+  1. Step 1 - Answer to the five questions and give enough proofs (eg. plots, stats, etc...) One question per person
+  2. Step 2 - Merge all findings and create a story out of them, and go deeper if an interesting thing is found
+  3. Step 3 - Create the website and add the story
+
 **Organisation within the team**
+Step 1 - 17.11 to 24.11
+Step 2 - 24.11 to 01.12
+Step 3 - 01.11 to 08.12
+
 
 
