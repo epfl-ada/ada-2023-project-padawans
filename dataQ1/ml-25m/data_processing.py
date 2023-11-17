@@ -4,9 +4,9 @@ import numpy as np
 
 def processing():
     # Load the CSV files into pandas DataFrames
-    rating = pd.read_csv("D:\EPFL\ADA\projet\P2/ada-2023-project-padawans\data\ml-25m/ratings.csv")
-    links = pd.read_csv('D:\EPFL\ADA\projet\P2/ada-2023-project-padawans\data\ml-25m/links.csv')
-    movies = pd.read_csv('D:\EPFL\ADA\projet\P2/ada-2023-project-padawans\data\ml-25m/movies.csv')
+    rating = pd.read_csv("ratings.csv")
+    links = pd.read_csv('links.csv')
+    movies = pd.read_csv('movies.csv')
 
     # Group by 'id' and calculate the average rating for each group
     average_ratings = rating.groupby('movieId')['rating'].agg(np.nanmean).reset_index()
