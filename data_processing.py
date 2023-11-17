@@ -9,7 +9,7 @@ def processing():
     rating = pd.read_csv('data/ratings.csv')
     links = pd.read_csv('data/links.csv')
     movies = pd.read_csv('data/movies_metadata.csv')
-    summaries = pd.read_csv('data/plot_summaries.txt',header=None, names=['Wikipedia_ID','Summary'])
+    summaries = pd.read_csv('data/plot_summaries.txt',sep='\t',header=None, names=['Wikipedia_ID','Summary'])
     nlp = spacy.load("en_core_web_sm")
 
     def process_text(summary):
@@ -49,7 +49,7 @@ def processing():
 
     ### 20 minutes long 
     #summaries['tokens']= sm['Summary'].apply(lambda x : process_text(x))
-    
+
     #pd.merge(merged_df, summaries, on='Wikipedia_ID', how='left')
    
 
