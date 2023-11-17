@@ -26,6 +26,7 @@ We want to investigate the extent to which movies serve as mirrors to the social
   - Focus on the years 1900 to 2010 within the 20th and beginning of the 21st century.
 
 - **For Q1 - Correlation Analysis of Genres and Socio-Political Events:**
+(To be able to vizualize this section you need plotly)
   - Plot the number and percentage of movies per genre and per year.
   - Visualize the evolution of genres over time (e.g., using bar plots, line plots) to identify trends.
   - Visualize the box office shares of movie genres over time.
@@ -39,6 +40,7 @@ We want to investigate the extent to which movies serve as mirrors to the social
   - Create comparison visualizations of socio-political themes across decades and historical key events.
 
 - **For Q3 - Representation of Social and Demographic Groups:**
+(To be able to vizualize this section you need plotly)
   - Analyze how the representation of various social groups changes over time.
   - Visualize changes in representation for each social group.
   - Explore correlations between representation changes and key socio-political events.
