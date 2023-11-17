@@ -1,14 +1,11 @@
 /data
 /dataset
 /MovieSummaries
+/dataQ1
 
 
-Q1_Correl_Genres_Events.ipynb
-Q2_ANSWER.ipynb
-Q3.ipynb
-Q5.ipynb
-Question4.ipynb
 SimilaritySearch copy.ipynb
 SimilaritySearch.ipynb
 merge_dataset.ipynb
 exploration_film_code.ipynb
+.DS_Store
