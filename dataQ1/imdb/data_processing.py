@@ -3,6 +3,7 @@ import numpy as np
 
 
 def processing():
+    #downloasd links: https://datasets.imdbws.com/title.akas.tsv.gz and https://datasets.imdbws.com/title.ratings.tsv.gz
     # Load the CSV files into pandas DataFrames
     rating = pd.read_csv("imdbratings.tsv", sep='\t')
    
