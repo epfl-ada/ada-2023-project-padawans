@@ -45,9 +45,15 @@ We want to investigate the extent to which movies serve as mirrors to the social
   - Apply topic modeling techniques (e.g., LDA, NMF) to identify key themes within plot summaries.
   - Analyze sentiment trends over time.
   - Investigate correlations between identified themes and sentiment.
-5. **For Q5:
+5. **For Q5**:
 Define keywords associated with socio-political themes
 Check if any of the socio-political keywords appear in the plot summary and genres.
 Compare the average ratings of movies in both categories.
 Analyze how the critical reception of movies in these categories has changed over time
 Conduct statistical tests (like t-tests or ANOVA) to see if there are significant differences in ratings between the two categories.
+
+**Proposed Timeline**
+
+**Organisation within the team**
+
+
