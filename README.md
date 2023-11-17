@@ -3,6 +3,7 @@
 
 
 **Abstract** 
+
 We want to investigate the extent to which movies serve as mirrors to the social and political climate of the twentieth century. Through a multidimensional analysis, encompassing genre trends and thematic content, we discern nuanced patterns of socio-political reflection within movies narratives. Employing advanced natural language processing techniques, we dissect plot summaries to uncover implicit and explicit references to key societal issues. Our findings illuminate the intricate interplay between movies and the evolving socio-political landscape, shedding light on the enduring impact of movies as a medium of reflection, commentary, and influence. This research not only advances our comprehension of film as a cultural artifact but also underscores its potential as a historical and sociological archive of the twentieth century.
 
 
