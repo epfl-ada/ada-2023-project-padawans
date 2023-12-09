@@ -70,3 +70,18 @@ Step 3 - 01.11 to 08.12
 
 
 
+
+
+
+**Introduction** 
+
+- Timeline + evenement
+- The "Great Dictator" directed by and starring Charlie Chaplin in 1940 is a famous movie made during World War II which vehiculates critique of facism and dictatorship, an anti-war message and an iconic message for humanity. This movie is a great example amongst many which show clearly how movies can be used as a medium for social and political commentary, influencing public opinion and bringing attention to critical global issues. In this project, we want to investigate the extent to which movies serve as mirrors to the social and political climate of the twentieth century.
+- GIF https://www.pinterest.com/pin/charlie-chaplins-first-speech-in-a-film-the-great-dictator--364650901077984470/
+
+- Host sur github
+
+Q2
+- Global 
+- Evolution des top 5 ou top 10 des 20 annees tu regarde
+- 
