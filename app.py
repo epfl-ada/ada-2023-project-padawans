@@ -42,7 +42,6 @@ def overview():
              influencing public opinion and bringing attention to critical global issues. In this project, we want to investigate the extent to 
              which movies serve as mirrors to the social and political climate of the twentieth century.""")
     col1, col2, col3 = st.columns(3)
-    # Three columns with different widths
     col1, col2, col3 = st.columns([1,2,1])
     with col2:
         st.image('giphy.gif', width=480, use_column_width=True)
@@ -86,8 +85,13 @@ def correlation_analysis():
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-
     with open('figures/boxofficeshare_genre_total_max.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig, width=1500)
+
+    with open('figures/boxofficeshare_genre_top10fix_max.json', 'r') as json_file:
         fig_json = json.load(json_file)
 
     fig = go.Figure(fig_json)
@@ -136,7 +140,6 @@ def social_and_demographic_groups():
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-
     def read_markdown_file(markdown_file):
         return Path(markdown_file).read_text()
 
@@ -155,7 +158,6 @@ def ratings_socio_political():
     
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
-
 
     intro_markdown = read_markdown_file("figures/koami2.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
@@ -205,6 +207,11 @@ def main():
 
     if selected == "Overview":
         overview()
+        correlation_analysis()
+        socio_political()
+        social_and_demographic_groups()
+        sentiment()
+        ratings_socio_political()
     elif selected == "Correlation Analysis of Genres and Socio-Political Events":
         correlation_analysis()
     elif selected == "Analysis of Socio-Political Themes":
