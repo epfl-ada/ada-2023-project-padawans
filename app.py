@@ -31,6 +31,8 @@ view_state = pdk.ViewState(
     pitch=0
 )
 
+def read_markdown_file(markdown_file):
+    return Path(markdown_file).read_text()
 
 def overview():
     st.header('Part 1: Overview')
@@ -50,12 +52,46 @@ def overview():
 def correlation_analysis():
     st.header('Part 2: Data Exploration')
 
-    with open('figures/test.json', 'r') as json_file:
+    with open('figures/release_year_histo_max.json', 'r') as json_file:
         fig_json = json.load(json_file)
 
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
+    with open('figures/boxoffice_percentage_max.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/top10_release_histo.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/barplot_genres_fix_wo_other.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/genre_evolution_linechart_dynamic_with_other_max.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/genre_evolution_barplot_dynamic_with_other_max.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+
+    with open('figures/boxofficeshare_genre_total_max.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig, width=1500)
     st.write('In this section, you would typically include widgets for data exploration.')
 
 def socio_political():
@@ -74,12 +110,33 @@ def socio_political():
 def social_and_demographic_groups():
     st.header('Part 3:  Representation of Social and Demographic Groups')
     st.write('Here you can display different data visualizations.')
-    st.image('figures/1-richard.png', width=700, use_column_width=True)
-    st.image('figures/2-richard.png', width=700, use_column_width=True)
-    st.image('figures/3-richard.png', width=700, use_column_width=True)
-    st.image('figures/4-richard.png', width=700, use_column_width=True)
-    st.image('figures/5-richard.png', width=700, use_column_width=True)
-    st.image('figures/6-richard.png', width=700, use_column_width=True)
+
+    with open('figures/ethnicity-representation1.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/ethnicity-representation2.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/ethnicity-representation3.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+    
+    with open('figures/ethnicity-representation4.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/ethnicity-representation5.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+
     def read_markdown_file(markdown_file):
         return Path(markdown_file).read_text()
 
@@ -87,18 +144,20 @@ def social_and_demographic_groups():
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
 def ratings_socio_political():
-    st.header('Part 5:  Ratings analysis of socio-political themed movies')
-    st.write('Here you can display different data visualizations.')
-    st.image('figures/1-koami.png', width=700, use_column_width=True)
-    st.image('figures/2-koami.png', width=700, use_column_width=True)
-    st.image('figures/3-koami.png', width=700, use_column_width=True)
-    st.image('figures/4-koami.png', width=700, use_column_width=True)
-    st.image('figures/5-koami.png', width=700, use_column_width=True)
-    st.image('figures/6-koami.png', width=700, use_column_width=True)
-    def read_markdown_file(markdown_file):
-        return Path(markdown_file).read_text()
 
-    intro_markdown = read_markdown_file("figures/koami.md")
+    st.header('Part 5:  Ratings analysis of socio-political themed movies')    
+
+    intro_markdown = read_markdown_file("figures/koami1.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+    
+    with open('figures/bar_chart_figure.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+
+    intro_markdown = read_markdown_file("figures/koami2.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
 def sentiment():
@@ -107,7 +166,6 @@ def sentiment():
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
-
 
     with open('figures/genre-emotion.json', 'r') as json_file:
         fig_json = json.load(json_file)
@@ -147,7 +205,7 @@ def main():
 
     if selected == "Overview":
         overview()
-    elif selected == " Correlation Analysis of Genres and Socio-Political Events":
+    elif selected == "Correlation Analysis of Genres and Socio-Political Events":
         correlation_analysis()
     elif selected == "Analysis of Socio-Political Themes":
         socio_political()

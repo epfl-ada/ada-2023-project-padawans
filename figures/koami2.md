@@ -1,0 +1,5 @@
+The statistical results yielded a compelling T-Statistic of 17.59 and an extremely low P-Value of 1.44e-68, indicating a statistically significant difference in IMDb ratings between movies with explicit socio-political content and those emphasizing entertainment or aesthetics. This substantial T-Statistic emphasizes the magnitude of the observed difference.
+
+Further insight into the ratings reveals that movies with explicit socio-political content, on average, received a mean IMDb rating of 6.42, while those in the entertainment or aesthetics category had a slightly lower mean rating of 6.12. The standard deviation for socio-political movies (1.01) was also marginally lower than that of non socio-political movies (1.08).
+
+This discovery opens a gateway to a deeper understanding of audience preferences, critical evaluations, and the potential impact of socio-political narratives on the movies landscape. The statistically significant difference in ratings not only highlights a preference for socio-political content but also suggests a higher level of consensus among viewers regarding the quality of movies in this genre.
