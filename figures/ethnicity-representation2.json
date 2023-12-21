@@ -689,50 +689,6 @@
             ],
             "yaxis": "y",
             "type": "scatter"
-        },
-        {
-            "marker": {
-                "color": "red"
-            },
-            "mode": "markers",
-            "name": "French Z-score > 2",
-            "x": [
-                1921.0,
-                1927.0,
-                1928.0,
-                1929.0,
-                1930.0,
-                1931.0
-            ],
-            "y": [
-                0.006760371128860976,
-                0.008072092534285364,
-                0.007622865606317723,
-                0.007423530058144966,
-                0.007171212673801643,
-                0.007078650363050358
-            ],
-            "type": "scatter"
-        },
-        {
-            "marker": {
-                "color": "red"
-            },
-            "mode": "markers",
-            "name": "Spanish Z-score > 2",
-            "x": [],
-            "y": [],
-            "type": "scatter"
-        },
-        {
-            "marker": {
-                "color": "red"
-            },
-            "mode": "markers",
-            "name": "American Z-score > 2",
-            "x": [],
-            "y": [],
-            "type": "scatter"
         }
     ],
     "layout": {
@@ -1823,8 +1779,11 @@
         },
         "shapes": [
             {
-                "fillcolor": "rgba(255, 0, 0, 0.05)",
+                "fillcolor": "rgba(255, 0, 0, 0.20)",
                 "layer": "below",
+                "line": {
+                    "width": 1
+                },
                 "type": "rect",
                 "x0": "1914",
                 "x1": "1918",
@@ -1834,8 +1793,11 @@
                 "yref": "y domain"
             },
             {
-                "fillcolor": "rgba(255, 0, 0, 0.05)",
+                "fillcolor": "rgba(255, 0, 0, 0.20)",
                 "layer": "below",
+                "line": {
+                    "width": 1
+                },
                 "type": "rect",
                 "x0": "1939",
                 "x1": "1945",
@@ -1845,8 +1807,11 @@
                 "yref": "y domain"
             },
             {
-                "fillcolor": "rgba(255, 0, 0, 0.05)",
+                "fillcolor": "rgba(255, 0, 0, 0.20)",
                 "layer": "below",
+                "line": {
+                    "width": 1
+                },
                 "type": "rect",
                 "x0": "1989",
                 "x1": "1989",
