@@ -36,15 +36,26 @@ def read_markdown_file(markdown_file):
 
 def overview():
     st.header('Part 1: Overview')
-    st.write("""The "Great Dictator" directed by and starring Charlie Chaplin in 1940 is a famous movie made 
-             during World War II which vehiculates critique of facism and dictatorship, an anti-war message and an iconic message for humanity. 
-             This movie is a great example amongst many which show clearly how movies can be used as a medium for social and political commentary, 
-             influencing public opinion and bringing attention to critical global issues. In this project, we want to investigate the extent to 
-             which movies serve as mirrors to the social and political climate of the twentieth century.""")
+    st.write("""Imagine a world where cinema does more than entertain; it shapes the course of history. In 1982, the release of "Gandhi," directed by Richard Attenborough, became not just a cinematic event but a cultural phenomenon. As the film brought to life the struggles and philosophies of Mahatma Gandhi, it reignited a conversation about non-violence and civil rights across the globe. In South Africa, it reportedly influenced movements against apartheid, demonstrating the profound effect a film can have on the socio-political landscape.
+
+This is not an isolated instance. Throughout the twentieth century, numerous films have echoed the sentiments of their times, influenced public opinion, and even swayed the course of political events. From the bold anti-fascist statement in Charlie Chaplin’s "The Great Dictator" to the nuanced portrayal of the Vietnam War in "Apocalypse Now," cinema has been a powerful medium for socio-political commentary and change.""")
     col1, col2, col3 = st.columns(3)
     col1, col2, col3 = st.columns([1,2,1])
     with col2:
         st.image('giphy.gif', width=480, use_column_width=True)
+    st.write("""In this project, we delve into the rich interplay between cinema and the socio-political fabric of the twentieth century. We aim to uncover how films have reflected, influenced, and sometimes even transformed the socio-political climate of their times. Through a blend of analytical rigor and narrative exploration, we will journey through the following facets:
+
+Analysis of Socio-Political Themes: Identifying and understanding the prevalent socio-political themes in cinema.
+
+Correlation Analysis of Genres and Socio-Political Events: Exploring the relationship between film genres and major socio-political events.
+
+Representation of Social and Demographic Groups: Examining the portrayal of diverse groups in films against the backdrop of socio-political change.
+
+Sentiment Analysis: Assessing public perception and emotional responses to socio-political themes in movies.
+
+Ratings Analysis of Socio-Political Themed Movies: Evaluating audience and critic reception of films with socio-political themes.
+
+Our journey will conclude with a synthesis of these findings, revealing the powerful role cinema has played as both a reflector and an influencer of socio-political narratives. Join us as we unravel the stories behind the screen, uncovering the hidden dialogues between cinema and society.""")
     st.map(data)
 
 
