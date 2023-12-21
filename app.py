@@ -43,17 +43,7 @@ This is not an isolated instance. Throughout the twentieth century, numerous fil
     col1, col2, col3 = st.columns([1,2,1])
     with col2:
         st.image('giphy.gif', width=480, use_column_width=True)
-    st.write("""In this project, we delve into the rich interplay between cinema and the socio-political fabric of the twentieth century. We aim to uncover how films have reflected, influenced, and sometimes even transformed the socio-political climate of their times. Through a blend of analytical rigor and narrative exploration, we will journey through the following facets:
-
-Analysis of Socio-Political Themes: Identifying and understanding the prevalent socio-political themes in cinema.
-
-Correlation Analysis of Genres and Socio-Political Events: Exploring the relationship between film genres and major socio-political events.
-
-Representation of Social and Demographic Groups: Examining the portrayal of diverse groups in films against the backdrop of socio-political change.
-
-Sentiment Analysis: Assessing public perception and emotional responses to socio-political themes in movies.
-
-Ratings Analysis of Socio-Political Themed Movies: Evaluating audience and critic reception of films with socio-political themes.
+    st.write("""In this project, we delve into the rich interplay between cinema and the socio-political fabric of the twentieth century. We aim to uncover how films have reflected, influenced, and sometimes even transformed the socio-political climate of their times. Our exploration begins with an analysis of socio-political themes, identifying and understanding the prevalent motifs in cinema. We then examine the correlation between film genres and major socio-political events, exploring how cinematic expressions respond to and influence historical contexts. The study also investigates the representation of diverse social and demographic groups in films, reflecting the evolving societal narratives. Additionally, we assess public perception and emotional responses to socio-political themes in movies through sentiment analysis. Finally, we evaluate how audiences and critics have received films with socio-political themes, providing insight into their impact and reception.
 
 Our journey will conclude with a synthesis of these findings, revealing the powerful role cinema has played as both a reflector and an influencer of socio-political narratives. Join us as we unravel the stories behind the screen, uncovering the hidden dialogues between cinema and society.""")
     st.map(data)
