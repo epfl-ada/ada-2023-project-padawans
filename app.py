@@ -115,25 +115,38 @@ def social_and_demographic_groups():
     st.header('Part 3:  Representation of Social and Demographic Groups')
     st.write('Here you can display different data visualizations.')
 
+    intro_markdown = read_markdown_file("figures/richard1.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+
     with open('figures/ethnicity-representation1.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
+
 
     with open('figures/ethnicity-representation2.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
+    intro_markdown = read_markdown_file("figures/richard2.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+
     with open('figures/ethnicity-representation3.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
     
+    intro_markdown = read_markdown_file("figures/richard3.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+
     with open('figures/ethnicity-representation4.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
+
+    intro_markdown = read_markdown_file("figures/richard4.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
 
     with open('figures/ethnicity-representation5.json', 'r') as json_file:
         fig_json = json.load(json_file)
