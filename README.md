@@ -1,6 +1,6 @@
 # Unveiling socio-political reflections in twentieth century movies
 
-[DATASTORY](https://ada-2023-project-padawans-vquykfdbmnmqtf9nhrqlo5.streamlit.app/)
+[Data Story](https://ada-2023-project-padawans-l39kkobpbgyrarfdzxdo26.streamlit.app/)
 
 [Download data for reproducibility](https://drive.google.com/drive/u/3/folders/1FG-NtD-3Z3pRnVtfejnJuWNBpYDPin2K)
 
