@@ -176,13 +176,7 @@ def social_and_demographic_groups():
     intro_markdown = read_markdown_file("figures/richard1.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
-    with open('figures/ethnicity-representation1.json', 'r') as json_file:
-        fig_json = json.load(json_file)
-    fig = go.Figure(fig_json)
-    st.plotly_chart(fig)
-
-
-    with open('figures/ethnicity-representation2.json', 'r') as json_file:
+    with open('figures/ethnicity-representation0.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
@@ -190,12 +184,20 @@ def social_and_demographic_groups():
     intro_markdown = read_markdown_file("figures/richard2.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
-    with open('figures/ethnicity-representation3.json', 'r') as json_file:
+    with open('figures/ethnicity-representation1.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    intro_markdown = read_markdown_file("figures/richard3.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+
+    with open('figures/ethnicity-representation.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
     
-    intro_markdown = read_markdown_file("figures/richard3.md")
+    intro_markdown = read_markdown_file("figures/richard4.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
     with open('figures/ethnicity-representation4.json', 'r') as json_file:
