@@ -1438,7 +1438,8 @@
             "text": "Genre share in box office through the time"
         },
         "barmode": "stack",
-        "height": 800,
+        "height": 600,
+        "width": 800,
         "bargap": 0
     }
 }
