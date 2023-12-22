@@ -1,0 +1,1 @@
+Now it is time to talk money. Of course, if a film is popular (and thus probably appreciated), it will genrerate a lot of revenues. Here is a plot showing the proportion of movies in our dataset having a box office revenue that has been recorded Unfortunately, no more than 20% of films for a given year has data about revenues. We can also observe a strange peak in the 1950s.
