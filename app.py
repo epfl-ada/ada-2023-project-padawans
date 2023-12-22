@@ -173,7 +173,16 @@ def ratings_socio_political():
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-    intro_markdown = read_markdown_file("figures/koami2.md")
+    intro_markdown = read_markdown_file("figures/koami3.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+    
+    with open('figures/bar_emotions_figure.json', 'r') as json_file2:
+        fig2_json = json.load(json_file2)
+    
+    fig2 = go.Figure(fig2_json)
+    st.plotly_chart(fig2)
+    
+    intro_markdown = read_markdown_file("figures/koami4.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
 def sentiment():
