@@ -72,6 +72,6 @@ We want to investigate the extent to which movies serve as mirrors to the social
 Although we organised the work so that each person works on one research question, the work in general was done in group
 - Maxime Chanson : Correlation Analysis of Genres and Socio-Political Events
 - Igor Jomaron : Analysis of Socio-Political Themes
-- Richard Gabriel Chui : Representation of Social and Demographic Groups
+- Richard Gabriel Chiu : Representation of Social and Demographic Groups
 - Abdherramane Ould Bay : Sentiment Analysis
 - Koami Gafan : Ratings analysis of socio-political themed movies
