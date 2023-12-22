@@ -75,28 +75,21 @@ def correlation_analysis():
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-    with open('figures/genre_evolution_linechart_dynamic_with_other_max.json', 'r') as json_file:
+    with open('figures/Fboxofficeshare_top5_genres_5year_intervals_1910_2010.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-    with open('figures/genre_evolution_barplot_dynamic_with_other_max.json', 'r') as json_file:
+    with open('figures/Gcorrelplot_max.json', 'r') as json_file:
         fig_json = json.load(json_file)
-
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-    with open('figures/boxofficeshare_genre_total_max.json', 'r') as json_file:
-        fig_json = json.load(json_file)
+    intro_markdown = read_markdown_file("figures/max_correl.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
 
-    fig = go.Figure(fig_json)
-    st.plotly_chart(fig, width=1500)
+    
 
-    with open('figures/boxofficeshare_genre_top10fix_max.json', 'r') as json_file:
-        fig_json = json.load(json_file)
-
-    fig = go.Figure(fig_json)
-    st.plotly_chart(fig, width=1500)
     st.write('In this section, you would typically include widgets for data exploration.')
 
 def socio_political():
@@ -153,6 +146,7 @@ def social_and_demographic_groups():
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
+
 
     def read_markdown_file(markdown_file):
         return Path(markdown_file).read_text()
