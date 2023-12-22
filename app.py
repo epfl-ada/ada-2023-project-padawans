@@ -213,7 +213,7 @@ def social_and_demographic_groups():
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-    intro_markdown = read_markdown_file("figures/richard5.md")
+    intro_markdown = read_markdown_file("figures/richard6.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
 
