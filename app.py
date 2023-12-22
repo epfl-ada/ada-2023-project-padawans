@@ -72,7 +72,7 @@ def correlation_analysis():
     text = read_markdown_file("figures/MAX_1 - Copie (3).md")
     st.markdown(text, unsafe_allow_html=True)
 
-    with open('figures/MAX_Genres_5y_barplot_withothernondisplayed.json', 'r') as json_file:
+    with open('figures/MAX_Genres_5y_barplot_withothernondisplayednew.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
