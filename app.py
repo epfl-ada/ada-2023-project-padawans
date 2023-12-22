@@ -221,9 +221,14 @@ Sentiment analysis brought to light the emotional impact of socio-political them
 
 Finally, our ratings analysis provided insight into how socio-political themes are received and valued by audiences and critics alike. This metric offered a unique window into the public's engagement with and reaction to movies that dared to address significant socio-political issues.
 
-In conclusion, our exploration has revealed that movies, in their most impactful moments, transcends entertainment. It becomes a conduit for change, a voice for the voiceless, and a mirror reflecting our collective hopes, fears, and aspirations. The stories told on the silver screen are more than just tales; they are fragments of our shared history and indicators of our societal trajectory.
+In conclusion, our exploration has revealed that movies, in their most impactful moments, transcends entertainment. It becomes a conduit for change, a voice for the voiceless, and a mirror reflecting our collective hopes, fears, and aspirations. The stories told on the silver screen are more than just tales; they are fragments of our shared history and indicators of our societal trajectory.""")
 
-As we step out from this cinematic exploration, we are left with a profound appreciation for the medium's power and responsibility. Movies do not just belong to the realm of art; they are integral threads in the fabric of socio-political discourse. They challenge us, inspire us, and most importantly, remind us of the unending dialogue between art and life, movies and society.
+    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns([1,2,1])
+    with col2:
+        st.image('movies_collage.png', width=480, use_column_width=True)
+
+    st.write("""As we step out from this cinematic exploration, we are left with a profound appreciation for the medium's power and responsibility. Movies do not just belong to the realm of art; they are integral threads in the fabric of socio-political discourse. They challenge us, inspire us, and most importantly, remind us of the unending dialogue between art and life, movies and society.
 
 In the flickering light of the projector, we have witnessed a world in motion, a narrative of humanity unfolding. And as the screen fades to black, we are left not only in awe but also with a newfound understanding of the indelible imprint cinema leaves on the pages of our collective history.""")
 
