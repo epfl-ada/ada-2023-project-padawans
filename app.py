@@ -104,17 +104,15 @@ def socio_political():
     st.image('figures/igor-1.png', width=700, use_column_width=True)
     st.image('figures/igor-2.png', width=700, use_column_width=True)
     st.image('figures/igor-3.png', width=700, use_column_width=True)
-
-    def read_markdown_file(markdown_file):
-        return Path(markdown_file).read_text()
-
     intro_markdown = read_markdown_file("figures/igor.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
 def social_and_demographic_groups():
     st.header('Part 3:  Representation of Social and Demographic Groups')
     st.write('Here you can display different data visualizations.')
-
+    def read_markdown_file(markdown_file):
+        return Path(markdown_file).read_text()
+    
     intro_markdown = read_markdown_file("figures/richard1.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
@@ -129,35 +127,35 @@ def social_and_demographic_groups():
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-    intro_markdown = read_markdown_file("figures/richard2.md")
-    st.markdown(intro_markdown, unsafe_allow_html=True)
+    #intro_markdown = read_markdown_file("figures/richard2.md")
+    #st.markdown(intro_markdown, unsafe_allow_html=True)
 
     with open('figures/ethnicity-representation3.json', 'r') as json_file:
         fig_json = json.load(json_file)
-    fig = go.Figure(fig_json)
-    st.plotly_chart(fig)
+    #fig = go.Figure(fig_json)
+    #st.plotly_chart(fig)
     
-    intro_markdown = read_markdown_file("figures/richard3.md")
-    st.markdown(intro_markdown, unsafe_allow_html=True)
+    #intro_markdown = read_markdown_file("figures/richard3.md")
+    #st.markdown(intro_markdown, unsafe_allow_html=True)
 
     with open('figures/ethnicity-representation4.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-    intro_markdown = read_markdown_file("figures/richard4.md")
-    st.markdown(intro_markdown, unsafe_allow_html=True)
+    #intro_markdown = read_markdown_file("figures/richard4.md")
+    #st.markdown(intro_markdown, unsafe_allow_html=True)
 
     with open('figures/ethnicity-representation5.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-    def read_markdown_file(markdown_file):
-        return Path(markdown_file).read_text()
+    #def read_markdown_file(markdown_file):
+    #    return Path(markdown_file).read_text()
 
-    intro_markdown = read_markdown_file("figures/richard.md")
-    st.markdown(intro_markdown, unsafe_allow_html=True)
+    #intro_markdown = read_markdown_file("figures/richard.md")
+    #st.markdown(intro_markdown, unsafe_allow_html=True)
 
 def ratings_socio_political():
 
@@ -200,6 +198,41 @@ def sentiment():
     st.plotly_chart(fig)
 
     with open('figures/time-sentiment.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/genre-emotion_war.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/genre-emotion_war_Afghanistan.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/genre-emotion_war_Cold War.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/genre-emotion_war_Iraq.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/genre-emotion_war_Nazi.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/genre-emotion_war_Vietnam.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/genre-emotion_war_World War 2.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)

@@ -14,6 +14,5 @@ We also choosed to apply a moving average of 5 years over the data.
 
 > Overall, the data is quite scarce before the 80' especially for countries outside the western world, leading to very high short term volatility. Smoothing the curve with a moving average mitigates this issue.
 
-# World War I #
 
 

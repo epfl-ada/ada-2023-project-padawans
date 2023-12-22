@@ -1,0 +1,88 @@
+Combination,U-statistic,P-value,Significant Difference,Significance
+cw_fear vs viet_fear,123.5,0.7145342168859726,False,
+cw_joy vs viet_joy,29.0,0.7765900055372532,False,
+cw_anger vs viet_anger,257.0,0.8485371207845567,False,
+cw_fear vs ww2_fear,159.5,0.7698897219708241,False,
+cw_joy vs ww2_joy,41.0,0.8388770644833464,False,
+cw_anger vs ww2_anger,446.5,0.9341530753324869,False,
+cw_fear vs iraq_fear,225.0,0.6076113604552075,False,
+cw_joy vs iraq_joy,41.0,0.8388770644833464,False,
+cw_anger vs iraq_anger,640.5,0.9457320262617255,False,
+cw_fear vs nazi_fear,187.5,0.7091496951136546,False,
+cw_joy vs nazi_joy,41.0,0.8388770644833464,False,
+cw_anger vs nazi_anger,583.5,0.867469716200622,False,
+cw_fear vs afghan_fear,244.5,0.6084773902411087,False,
+cw_joy vs afghan_joy,43.0,0.8460534801004731,False,
+cw_anger vs afghan_anger,683.0,0.7472927293938441,False,
+viet_fear vs ww2_fear,232.0,0.9055096798470478,False,
+viet_joy vs ww2_joy,125.0,0.9693312822539596,False,
+viet_anger vs ww2_anger,838.5,0.903297976966412,False,
+viet_fear vs iraq_fear,325.5,0.9703649792924295,False,
+viet_joy vs iraq_joy,125.0,0.9693312822539596,False,
+viet_anger vs iraq_anger,1216.0,0.7997071325351458,False,
+viet_fear vs nazi_fear,272.0,0.9494919515937588,False,
+viet_joy vs nazi_joy,125.0,0.9693312822539596,False,
+viet_anger vs nazi_anger,1107.5,0.7049413364938312,False,
+viet_fear vs afghan_fear,352.5,0.9930848560767283,False,
+viet_joy vs afghan_joy,132.0,0.9558419224938698,False,
+viet_anger vs afghan_anger,1290.5,0.5367699266069488,False,
+ww2_fear vs iraq_fear,438.0,0.8477073186334932,False,
+ww2_love vs iraq_love,0.5,1.0,False,
+ww2_anger vs iraq_anger,2184.0,0.8487264388846404,False,
+ww2_joy vs iraq_joy,180.5,1.0,False,
+ww2_sadness vs iraq_sadness,0.5,1.0,False,
+ww2_fear vs nazi_fear,367.0,0.9445901237697036,False,
+ww2_love vs nazi_love,0.5,1.0,False,
+ww2_anger vs nazi_anger,1991.0,0.7378424954613183,False,
+ww2_joy vs nazi_joy,180.5,1.0,False,
+ww2_sadness vs nazi_sadness,0.5,1.0,False,
+ww2_fear vs afghan_fear,473.5,0.8800271939005704,False,
+ww2_love vs afghan_love,0.5,1.0,False,
+ww2_anger vs afghan_anger,2332.5,0.5627086565785495,False,
+ww2_joy vs afghan_joy,190.0,1.0,False,
+ww2_sadness vs afghan_sadness,0.5,1.0,False,
+iraq_fear vs nazi_fear,486.5,0.9339660236105318,False,
+iraq_love vs nazi_love,0.5,1.0,False,
+iraq_anger vs nazi_anger,2994.5,0.8801341108778519,False,
+iraq_joy vs nazi_joy,180.5,1.0,False,
+iraq_sadness vs nazi_sadness,0.5,1.0,False,
+iraq_fear vs afghan_fear,623.5,0.9540317997416519,False,
+iraq_love vs afghan_love,0.5,1.0,False,
+iraq_anger vs afghan_anger,3510.0,0.6772558872322367,False,
+iraq_joy vs afghan_joy,190.0,1.0,False,
+iraq_sadness vs afghan_sadness,0.5,1.0,False,
+nazi_fear vs afghan_fear,539.0,0.9793539129543858,False,
+nazi_love vs afghan_love,0.5,1.0,False,
+nazi_anger vs afghan_anger,3298.0,0.8022632821464244,False,
+nazi_joy vs afghan_joy,190.0,1.0,False,
+nazi_sadness vs afghan_sadness,0.5,1.0,False,
+cw_NEGATIVE vs viet_NEGATIVE,839.5,0.49401617486147387,,Not Significant
+cw_POSITIVE vs viet_POSITIVE,9.0,0.3485385274269813,,Not Significant
+cw_NEGATIVE vs ww2_NEGATIVE,1311.0,0.5430736182190546,,Not Significant
+cw_POSITIVE vs ww2_POSITIVE,13.0,0.20110445181459136,,Not Significant
+cw_NEGATIVE vs iraq_NEGATIVE,1852.0,0.4939769176519233,,Not Significant
+cw_POSITIVE vs iraq_POSITIVE,15.5,0.2646951724691715,,Not Significant
+cw_NEGATIVE vs nazi_NEGATIVE,1681.0,0.5462424512675226,,Not Significant
+cw_POSITIVE vs nazi_POSITIVE,13.0,0.20110445181459136,,Not Significant
+cw_NEGATIVE vs afghan_NEGATIVE,2005.0,0.5939884074775796,,Not Significant
+cw_POSITIVE vs afghan_POSITIVE,15.5,0.22815158552348858,,Not Significant
+viet_NEGATIVE vs ww2_NEGATIVE,2191.0,0.878790402966968,,Not Significant
+viet_POSITIVE vs ww2_POSITIVE,84.5,1.0,,Not Significant
+viet_NEGATIVE vs iraq_NEGATIVE,3095.0,0.9161974118289051,,Not Significant
+viet_POSITIVE vs iraq_POSITIVE,93.5,0.884810725604402,,Not Significant
+viet_NEGATIVE vs nazi_NEGATIVE,2810.0,0.8530020819168873,,Not Significant
+viet_POSITIVE vs nazi_POSITIVE,84.5,1.0,,Not Significant
+viet_NEGATIVE vs afghan_NEGATIVE,3330.5,0.7257553579261041,,Not Significant
+viet_POSITIVE vs afghan_POSITIVE,94.5,1.0,,Not Significant
+ww2_NEGATIVE vs iraq_NEGATIVE,4974.5,0.9649330976868813,,Not Significant
+ww2_POSITIVE vs iraq_POSITIVE,160.0,0.8290202901422175,,Not Significant
+ww2_NEGATIVE vs nazi_NEGATIVE,4518.0,0.9634531815899091,,Not Significant
+ww2_POSITIVE vs nazi_POSITIVE,144.5,1.0,,Not Significant
+ww2_NEGATIVE vs afghan_NEGATIVE,5370.0,0.839629513136058,,Not Significant
+ww2_POSITIVE vs afghan_POSITIVE,161.0,1.0,,Not Significant
+iraq_NEGATIVE vs nazi_NEGATIVE,6325.5,0.9253478853594019,,Not Significant
+iraq_POSITIVE vs nazi_POSITIVE,146.0,0.8290202901422175,,Not Significant
+iraq_NEGATIVE vs afghan_NEGATIVE,7514.5,0.7834964225708501,,Not Significant
+iraq_POSITIVE vs afghan_POSITIVE,163.0,0.8184279023594497,,Not Significant
+nazi_NEGATIVE vs afghan_NEGATIVE,6930.0,0.8655838955334122,,Not Significant
+nazi_POSITIVE vs afghan_POSITIVE,161.0,1.0,,Not Significant
