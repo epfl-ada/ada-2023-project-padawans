@@ -1,0 +1,1 @@
+#### Analysis of Sentiement and emotions on popularity, revenue and rating

@@ -11075,7 +11075,7 @@
                 1.0
             ],
             "title": {
-                "text": "MovieReleaseDate"
+                "text": "Release data"
             }
         },
         "yaxis": {
@@ -11085,18 +11085,21 @@
                 1.0
             ],
             "title": {
-                "text": "count"
+                "text": "Count"
             }
         },
         "legend": {
             "title": {
-                "text": "most_frequent_emotion"
+                "text": ""
             },
             "tracegroupgap": 0
         },
         "margin": {
             "t": 60
         },
-        "barmode": "relative"
+        "barmode": "relative",
+        "title": {
+            "text": "Histogram of disstribution of emotions over decades"
+        }
     }
 }

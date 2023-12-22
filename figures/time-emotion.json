@@ -1083,7 +1083,7 @@
                 1.0
             ],
             "title": {
-                "text": "decade"
+                "text": "Decade"
             }
         },
         "yaxis": {
@@ -1093,18 +1093,21 @@
                 1.0
             ],
             "title": {
-                "text": "proportion"
+                "text": "Proportion"
             }
         },
         "legend": {
             "title": {
-                "text": "most_frequent_emotion_x"
+                "text": "Most Frequent Emotion"
             },
             "tracegroupgap": 0
         },
         "margin": {
             "t": 60
         },
-        "barmode": "stack"
+        "barmode": "stack",
+        "title": {
+            "text": "Distribution of emotion over decades"
+        }
     }
 }

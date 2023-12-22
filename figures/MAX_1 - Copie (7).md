@@ -1,0 +1,1 @@
+However, a more interesting fact with the boxoffice revenues is that it seems to increase through the years. As we move along time, we encounter more frequently movies generating huge revenues. Despite the stable genre shares, box office revenues may have risen due to technological advancements, global market expansion, and the emergence of blockbuster strategies.

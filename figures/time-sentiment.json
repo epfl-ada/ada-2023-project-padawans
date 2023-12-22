@@ -915,7 +915,7 @@
                 1.0
             ],
             "title": {
-                "text": "decade"
+                "text": "Decade"
             }
         },
         "yaxis": {
@@ -925,12 +925,12 @@
                 1.0
             ],
             "title": {
-                "text": "proportion"
+                "text": "Proportion"
             }
         },
         "legend": {
             "title": {
-                "text": "overall_sentiment_x"
+                "text": "Most Frequent Emotion"
             },
             "tracegroupgap": 0
         },
