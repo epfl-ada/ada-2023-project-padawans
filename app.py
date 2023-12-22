@@ -192,7 +192,7 @@ def social_and_demographic_groups():
     intro_markdown = read_markdown_file("figures/richard3.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
-    with open('figures/ethnicity-representation.json', 'r') as json_file:
+    with open('figures/ethnicity-representation_significance.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
@@ -200,25 +200,22 @@ def social_and_demographic_groups():
     intro_markdown = read_markdown_file("figures/richard4.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
-    with open('figures/ethnicity-representation4.json', 'r') as json_file:
+    with open('figures/ethnicity-representation_AlliesEnemies.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-    intro_markdown = read_markdown_file("figures/richard4.md")
+    intro_markdown = read_markdown_file("figures/richard5.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
-    with open('figures/ethnicity-representation5.json', 'r') as json_file:
+    with open('figures/ethnicity-representation_reaction_speed.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-
-    def read_markdown_file(markdown_file):
-        return Path(markdown_file).read_text()
-
-    intro_markdown = read_markdown_file("figures/richard.md")
+    intro_markdown = read_markdown_file("figures/richard5.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
+
 
 def ratings_socio_political():
 
