@@ -1,14 +1,13 @@
-# ada-2023-project-padawans
 # Unveiling socio-political reflections in twentieth century movies
-#### Website
-https://ada-2023-project-padawans-8bq993byh5h9xcgsyrauxz.streamlit.app/
 
-**Abstract** 
+[Data Story] (https://ada-2023-project-padawans-8bq993byh5h9xcgsyrauxz.streamlit.app/)
 
-We want to investigate the extent to which movies serve as mirrors to the social and political climate of the twentieth century. Through a multidimensional analysis, encompassing genre trends and thematic content, we discern nuanced patterns of socio-political reflection within movies narratives. Employing advanced natural language processing techniques, we dissect plot summaries to uncover implicit and explicit references to key societal issues. Our findings illuminate the intricate interplay between movies and the evolving socio-political landscape, shedding light on the enduring impact of movies as a medium of reflection, commentary, and influence. This research not only advances our comprehension of film as a cultural artifact but also underscores its potential as a historical and sociological archive of the twentieth century.
+## Abstract
+
+We want to investigate the extent to which movies serve as mirrors to the social and political climate of the twentieth century. Through a multidimensional analysis of the combined dataset of CMU Movie Summary Corpus and IMDB (http://www.cs.cmu.edu/~ark/personas/), encompassing genre trends and thematic content, we discern nuanced patterns of socio-political reflection within movies narratives. Employing advanced natural language processing techniques, we dissect plot summaries to uncover implicit and explicit references to key societal issues. Our findings illuminate the intricate interplay between movies and the evolving socio-political landscape, shedding light on the enduring impact of movies as a medium of reflection, commentary, and influence. This research not only advances our comprehension of film as a cultural artifact but also underscores its potential as a historical and sociological archive of the twentieth century.
 
 
-**Research Questions:**
+## Research Questions:
 1. How do movie genres change over time, and how do they relate to major social or political movements in the 20th and beginning of the 21st century?
 2. What socio-political themes are prominent in movies across different decades, and how do they connect with historical events and cultural shifts?
 3. How are different social and demographic groups represented in films, and how does this representation evolve over time?
@@ -17,7 +16,7 @@ We want to investigate the extent to which movies serve as mirrors to the social
 
 
 
-**Methods:**
+## Methods:
 - **Data Preparation and Datasets:**
   - Evaluate the extent of missing data in relevant movie information (genres, release date, box office revenue, rating, etc.).
   - Address the high proportion of missing box office data by incorporating additional datasets from the TMDb API.
@@ -64,25 +63,14 @@ We want to investigate the extent to which movies serve as mirrors to the social
   2. Step 2 - Merge all findings and create a story out of them, and go deeper if an interesting thing is found
   3. Step 3 - Create the website and add the story
 
+* Step 1 - 17.11 to 24.11
+* Step 2 - 24.11 to 01.12
+* Step 3 - 01.11 to 08.12
+
 **Organisation within the team**
-Step 1 - 17.11 to 24.11
-Step 2 - 24.11 to 01.12
-Step 3 - 01.11 to 08.12
-
-
-
-
-
-
-**Introduction** 
-
-- Timeline + evenement
-- The "Great Dictator" directed by and starring Charlie Chaplin in 1940 is a famous movie made during World War II which vehiculates critique of facism and dictatorship, an anti-war message and an iconic message for humanity. This movie is a great example amongst many which show clearly how movies can be used as a medium for social and political commentary, influencing public opinion and bringing attention to critical global issues. In this project, we want to investigate the extent to which movies serve as mirrors to the social and political climate of the twentieth century.
-- GIF https://www.pinterest.com/pin/charlie-chaplins-first-speech-in-a-film-the-great-dictator--364650901077984470/
-
-- Host sur github
-
-Q2
-- Global 
-- Evolution des top 5 ou top 10 des 20 annees tu regarde
-- 
+*Although we organised the work so that each person works on one research question, the work in general was done in group
+- Maxime Chanson : Correlation Analysis of Genres and Socio-Political Events
+- Igor Jomaron : Analysis of Socio-Political Themes
+- Richard Gabriel Chui : Representation of Social and Demographic Groups
+- Abdherramane Ould Bay : Sentiment Analysis
+- Koami Gafan : Ratings analysis of socio-political themed movies
