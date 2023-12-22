@@ -68,7 +68,8 @@ We want to investigate the extent to which movies serve as mirrors to the social
 * Step 3 - 01.11 to 08.12
 
 **Organisation within the team**
-*Although we organised the work so that each person works on one research question, the work in general was done in group
+
+Although we organised the work so that each person works on one research question, the work in general was done in group
 - Maxime Chanson : Correlation Analysis of Genres and Socio-Political Events
 - Igor Jomaron : Analysis of Socio-Political Themes
 - Richard Gabriel Chui : Representation of Social and Demographic Groups
