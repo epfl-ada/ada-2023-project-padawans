@@ -7,29 +7,6 @@ import plotly.graph_objs as go
 import json
 from pathlib import Path
 
-# DataFrame with latitude, longitude, and some additional data
-data = pd.DataFrame({
-    'lat': [46.2044, 47.3769],
-    'lon': [6.1432, 8.5417],
-    'label': ['Geneva', 'Zurich']
-})
-
-# Create a pydeck Layer
-layer = pdk.Layer(
-    'ScatterplotLayer',
-    data,
-    get_position='[lon, lat]',
-    get_radius=20000,  # Radius in meters
-    get_color=[0, 0, 255],  # RGB color value
-)
-
-# Set the viewport location
-view_state = pdk.ViewState(
-    latitude=47.0,
-    longitude=8.3,
-    zoom=7,
-    pitch=0
-)
 
 def read_markdown_file(markdown_file):
     return Path(markdown_file).read_text()
@@ -43,8 +20,7 @@ def overview():
     with col2:
         st.image('giphy.gif', width=480, use_column_width=True)
     intro_markdown = read_markdown_file("figures/intro2.md")
-    st.markdown(intro_markdown, unsafe_allow_html=True)
-    st.map(data)
+
 
 def correlation_analysis():
     st.header('Part 2: Data Exploration')
@@ -141,6 +117,7 @@ def correlation_analysis():
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
+    
 
     text = read_markdown_file("figures/MAX_1 - Copie (11).md")
     st.markdown(text, unsafe_allow_html=True)
@@ -155,10 +132,11 @@ def correlation_analysis():
 
 def socio_political():
     st.header('Part 2:  Analysis of Socio-Political Theme')
-    st.write('Here you can display different data visualizations.')
-    st.image('figures/igor-1.png', width=700, use_column_width=True)
-    st.image('figures/igor-2.png', width=700, use_column_width=True)
-    st.image('figures/igor-3.png', width=700, use_column_width=True)
+
+    with open('figures/socio-political-themes-frequency-evolution', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
     intro_markdown = read_markdown_file("figures/igor.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
@@ -247,7 +225,7 @@ def ratings_socio_political():
 
 def sentiment():
 
-    st.header('Sentiment Analysis on plot summaries')
+    st.header('Part 4:  Sentiment Analysis on plot summaries')
 
     intro_markdown = read_markdown_file("figures/abderrahmane1.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
