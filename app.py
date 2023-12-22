@@ -36,18 +36,15 @@ def read_markdown_file(markdown_file):
 
 def overview():
     st.header('Part 1: Overview')
-    st.write("""Imagine a world where cinema does more than entertain; it shapes the course of history. In 1982, the release of "Gandhi," directed by Richard Attenborough, became not just a cinematic event but a cultural phenomenon. As the movie brought to life the struggles and philosophies of Mahatma Gandhi, it reignited a conversation about non-violence and civil rights across the globe. In South Africa, it reportedly influenced movements against apartheid, demonstrating the profound effect a movie can have on the socio-political landscape.
-
-This is not an isolated instance. Throughout the twentieth century, numerous movies have echoed the sentiments of their times, influenced public opinion, and even swayed the course of political events. From the bold anti-fascist statement in Charlie Chaplin’s "The Great Dictator" to the nuanced portrayal of the Vietnam War in "Apocalypse Now," movies have been a powerful medium for socio-political commentary and change.""")
+    intro_markdown = read_markdown_file("figures/intro1.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
     col1, col2, col3 = st.columns([1,2,1])
     with col2:
         st.image('giphy.gif', width=480, use_column_width=True)
-    st.write("""In this project, we delve into the rich interplay between movies and the socio-political fabric of the twentieth century. We aim to uncover how movies have reflected, influenced, and sometimes even transformed the socio-political climate of their times. Our exploration begins with an analysis of socio-political themes, identifying and understanding the prevalent motifs in movies. We then examine the correlation between movies genres and major socio-political events, exploring how cinematic expressions respond to and influence historical contexts. The study also investigates the representation of diverse social and demographic groups in movies, reflecting the evolving societal narratives. Additionally, we assess public perception and emotional responses to socio-political themes in movies through sentiment analysis. Finally, we evaluate how audiences and critics have received films with socio-political themes, providing insight into their impact and reception.
-
-Our journey will conclude with a synthesis of these findings, revealing the powerful role movies have played as both a reflector and an influencer of socio-political narratives. Join us as we unravel the stories behind the screen, uncovering the hidden dialogues between movies and society.""")
+    intro_markdown = read_markdown_file("figures/intro2.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
     st.map(data)
-
 
 def correlation_analysis():
     st.header('Part 2: Data Exploration')
@@ -72,7 +69,7 @@ def correlation_analysis():
     text = read_markdown_file("figures/MAX_1 - Copie (3).md")
     st.markdown(text, unsafe_allow_html=True)
 
-    with open('figures/MAX_Genres_5y_barplot_withothernondisplayed.json', 'r') as json_file:
+    with open('figures/MAX_Genres_5y_barplot_withothernondisplayednew.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
@@ -162,17 +159,15 @@ def socio_political():
     st.image('figures/igor-1.png', width=700, use_column_width=True)
     st.image('figures/igor-2.png', width=700, use_column_width=True)
     st.image('figures/igor-3.png', width=700, use_column_width=True)
-
-    def read_markdown_file(markdown_file):
-        return Path(markdown_file).read_text()
-
     intro_markdown = read_markdown_file("figures/igor.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
 def social_and_demographic_groups():
     st.header('Part 3:  Representation of Social and Demographic Groups')
     st.write('Here you can display different data visualizations.')
-
+    def read_markdown_file(markdown_file):
+        return Path(markdown_file).read_text()
+    
     intro_markdown = read_markdown_file("figures/richard1.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
@@ -181,8 +176,8 @@ def social_and_demographic_groups():
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-    intro_markdown = read_markdown_file("figures/richard2.md")
-    st.markdown(intro_markdown, unsafe_allow_html=True)
+    #intro_markdown = read_markdown_file("figures/richard2.md")
+    #st.markdown(intro_markdown, unsafe_allow_html=True)
 
     with open('figures/ethnicity-representation1.json', 'r') as json_file:
         fig_json = json.load(json_file)
@@ -194,8 +189,8 @@ def social_and_demographic_groups():
 
     with open('figures/ethnicity-representation_significance.json', 'r') as json_file:
         fig_json = json.load(json_file)
-    fig = go.Figure(fig_json)
-    st.plotly_chart(fig)
+    #fig = go.Figure(fig_json)
+    #st.plotly_chart(fig)
     
     intro_markdown = read_markdown_file("figures/richard4.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
@@ -243,63 +238,147 @@ def ratings_socio_political():
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
 def sentiment():
-    st.header('Sentiment')
+
+    st.header('Sentiment Analysis on plot summaries')
+
+    intro_markdown = read_markdown_file("figures/abderrahmane1.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+
+    intro_markdown = read_markdown_file("figures/abderrahmane2.5.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+
     with open('figures/boxoffice-ratings.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
+    fig.update_layout(
+                    height=900,  # Increase figure height
+                    width=1000,   # Increase figure width
+                    )
+
     st.plotly_chart(fig)
+    intro_markdown = read_markdown_file("figures/abderrahmane2.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+    
+    intro_markdown = read_markdown_file("figures/abderrahmane3.5.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+    # Create two columns
+    cols = st.columns(2)
 
-    with open('figures/genre-emotion.json', 'r') as json_file:
-        fig_json = json.load(json_file)
+    # Load and display the first chart in the first column
+    with cols[0]:
+        with open('figures/genre-emotion.json', 'r') as json_file:
+            fig_json = json.load(json_file)
+        fig = go.Figure(fig_json)
+        st.plotly_chart(fig, use_container_width=True)
 
-    fig = go.Figure(fig_json)
-    st.plotly_chart(fig)
+    # Load and display the second chart in the second column
+    with cols[1]:
+        with open('figures/genre-sentiment.json', 'r') as json_file:
+            fig_json = json.load(json_file)
+        fig = go.Figure(fig_json)
+        st.plotly_chart(fig, use_container_width=True)
 
-    with open('figures/genre-sentiment.json', 'r') as json_file:
-        fig_json = json.load(json_file)
+    intro_markdown = read_markdown_file("figures/abderrahmane3.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
 
-    fig = go.Figure(fig_json)
-    st.plotly_chart(fig)
 
-    with open('figures/time-emotion.json', 'r') as json_file:
-        fig_json = json.load(json_file)
-    fig = go.Figure(fig_json)
-    st.plotly_chart(fig)
+    intro_markdown = read_markdown_file("figures/abderrahmane4.5.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+    # Create two columns
+    cols = st.columns(2)
 
-    with open('figures/time-sentiment.json', 'r') as json_file:
-        fig_json = json.load(json_file)
-    fig = go.Figure(fig_json)
-    st.plotly_chart(fig)
+    # Load and display the first chart in the first column
+    with cols[0]:
+        with open('figures/time-emotion.json', 'r') as json_file:
+            fig_json = json.load(json_file)
+        fig = go.Figure(fig_json)
+        fig.update_layout(
+                    height=400,  # Increase figure height
+                    width=1000,   # Increase figure width
+                    )
+        st.plotly_chart(fig, use_container_width=True)
 
-    st.write('This part might include more in-depth analysis or statistical tests.')
+    # Load and display the second chart in the second column
+    with cols[1]:
+        with open('figures/time-sentiment.json', 'r') as json_file:
+            fig_json = json.load(json_file)
+        fig = go.Figure(fig_json)
+        fig.update_layout(
+                height=400,  # Increase figure height
+                width=1000,   # Increase figure width
+            )
+        st.plotly_chart(fig, use_container_width=True)
+
+    intro_markdown = read_markdown_file("figures/abderrahmane4.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+    
+    intro_markdown = read_markdown_file("figures/abderrahmane5.5.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+    json_filenames = [
+    'figures/genre-emotion_war_Afghanistan.json',
+    'figures/genre-emotion_war_Cold War.json',
+    'figures/genre-emotion_war_Iraq.json',
+    'figures/genre-emotion_war_Nazi.json',
+    'figures/genre-emotion_war_Vietnam.json',
+    'figures/genre-emotion_war_World War 2.json'
+    ]
+
+    for i in range(0, len(json_filenames), 2):
+        cols = st.columns(2)  # Create two columns
+
+        for j in range(2):
+            if i + j < len(json_filenames):
+                with cols[j]:
+                    with open(json_filenames[i + j], 'r') as json_file:
+                        fig_json = json.load(json_file)
+                    fig = go.Figure(fig_json)
+
+                    # Modify the figure layout
+                    fig.update_layout(
+                        height=900,  # Increase figure height
+                        width=1500,   # Increase figure width
+                        legend=dict(
+                            font=dict(size=10),  # Decrease legend font size
+                            yanchor="top",
+                            y=0.99,
+                            xanchor="left",
+                            x=0.01
+                        ),
+                        title=dict(
+                            font=dict(size=14)  # Increase title font size
+                        ),
+                        xaxis=dict(
+                            title_font=dict(size=10)  # Increase x-axis title font size
+                        ),
+                        yaxis=dict(
+                            title_font=dict(size=10)  # Increase y-axis title font size
+                        )
+                    )
+
+                    # Increase the font size of the subplot titles (annotations)
+                    for annotation in fig.layout.annotations:
+                        annotation.font.size = 8  # Update this number to your preferred font size
+
+                    # Render the plot in Streamlit
+                    st.plotly_chart(fig, use_container_width=True)
+    intro_markdown = read_markdown_file("figures/abderrahmane5.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
 
 def conclusions():
     st.header('Part 5: Conclusions')
-    st.write("""As the final reel of our cinematic journey winds to a close, we find ourselves not at an end, but at a profound moment of synthesis and realization. Our exploration through the lens of twentieth-century movies has unveiled a landscape rich in diversity, challenge, and change. We have seen how movies are not mere reflections of the times but also powerful catalysts that can shape and redefine the socio-political narrative.
-
-The synthesis of our results paints a vivid tapestry. In analyzing socio-political themes, we observed the evolution of cinematic storytelling, mirroring the changing contours of societal and political concerns. From the daring satire of "The Great Dictator" to the introspective depth of "Gandhi," movies have served as barometers of public sentiment, capturing the zeitgeist of their eras.
-
-Our correlation analysis of genres and socio-political events further highlighted how movies adapt and respond to the world's heartbeat. The flux of genres, from the rise of war dramas during global conflicts to the emergence of dystopian movies in times of political uncertainty, underscores movies's responsiveness to the human condition.
-
-In examining the representation of social and demographic groups, we uncovered a narrative of progress and ongoing challenges. While there has been a gradual increase in diversity and representation, the journey towards a truly inclusive cinematic world remains a work in progress, reflecting wider societal struggles.
-
-Sentiment analysis brought to light the emotional impact of socio-political themes in movies. Movies with powerful messages resonated deeply with audiences, influencing perceptions and, in many cases, spurring dialogue and action.
-
-Finally, our ratings analysis provided insight into how socio-political themes are received and valued by audiences and critics alike. This metric offered a unique window into the public's engagement with and reaction to movies that dared to address significant socio-political issues.
-
-In conclusion, our exploration has revealed that movies, in their most impactful moments, transcends entertainment. It becomes a conduit for change, a voice for the voiceless, and a mirror reflecting our collective hopes, fears, and aspirations. The stories told on the silver screen are more than just tales; they are fragments of our shared history and indicators of our societal trajectory.""")
+    intro_markdown = read_markdown_file("figures/conclusion1.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
 
     col1, col2, col3 = st.columns(3)
     col1, col2, col3 = st.columns([1,2,1])
     with col2:
         st.image('movies_collage.png', width=480, use_column_width=True)
 
-    st.write("""As we step out from this cinematic exploration, we are left with a profound appreciation for the medium's power and responsibility. Movies do not just belong to the realm of art; they are integral threads in the fabric of socio-political discourse. They challenge us, inspire us, and most importantly, remind us of the unending dialogue between art and life, movies and society.
-
-In the flickering light of the projector, we have witnessed a world in motion, a narrative of humanity unfolding. And as the screen fades to black, we are left not only in awe but also with a newfound understanding of the indelible imprint cinema leaves on the pages of our collective history.""")
+    intro_markdown = read_markdown_file("figures/conclusion2.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
 
 def main():
-    st.title('My Streamlit App')
+    st.set_page_config(layout="wide")
 
     #Options Menu
     with st.sidebar:

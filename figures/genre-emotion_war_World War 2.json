@@ -1,0 +1,1453 @@
+{
+    "data": [
+        {
+            "marker": {
+                "color": [
+                    "#E63946",
+                    "#F4A261",
+                    "#2A9D8F",
+                    "#9C89B8",
+                    "#A8DADC",
+                    "#F0C808"
+                ]
+            },
+            "showlegend": false,
+            "x": [
+                "anger",
+                "fear",
+                "joy",
+                "love",
+                "sadness",
+                "surprise"
+            ],
+            "y": [
+                6.179375,
+                5.6706896551724135,
+                6.03695652173913,
+                8.1,
+                6.241666666666667,
+                3.0
+            ],
+            "type": "bar",
+            "xaxis": "x",
+            "yaxis": "y"
+        },
+        {
+            "marker": {
+                "color": [
+                    "#6D6875",
+                    "#264653"
+                ]
+            },
+            "showlegend": false,
+            "x": [
+                "NEGATIVE",
+                "POSITIVE"
+            ],
+            "y": [
+                6.10787037037037,
+                5.838709677419355
+            ],
+            "type": "bar",
+            "xaxis": "x2",
+            "yaxis": "y2"
+        },
+        {
+            "showlegend": false,
+            "x": [
+                "anger",
+                "fear",
+                "joy",
+                "love",
+                "sadness",
+                "surprise"
+            ],
+            "y": [
+                "anger",
+                "fear",
+                "joy",
+                "love",
+                "sadness",
+                "surprise"
+            ],
+            "z": [
+                [
+                    0.0,
+                    0.16708806511525703,
+                    0.04727335161694691,
+                    4.7121443998569815e-05,
+                    0.34890015126723495,
+                    0.30888700573701594
+                ],
+                [
+                    0.16708806511525703,
+                    0.0,
+                    0.3137741485194155,
+                    6.257228464349173e-05,
+                    0.12180912000309445,
+                    0.3315474739061992
+                ],
+                [
+                    0.04727335161694691,
+                    0.3137741485194155,
+                    0.0,
+                    0.0038559229376484193,
+                    0.0874184078491959,
+                    0.506019364405023
+                ],
+                [
+                    4.7121443998569815e-05,
+                    6.257228464349173e-05,
+                    0.0038559229376484193,
+                    0.0,
+                    0.0004720651898308794,
+                    0.6484222724084403
+                ],
+                [
+                    0.34890015126723495,
+                    0.12180912000309445,
+                    0.0874184078491959,
+                    0.0004720651898308794,
+                    0.0,
+                    0.29043237577531617
+                ],
+                [
+                    0.30888700573701594,
+                    0.3315474739061992,
+                    0.506019364405023,
+                    0.6484222724084403,
+                    0.29043237577531617,
+                    0.0
+                ]
+            ],
+            "type": "heatmap",
+            "xaxis": "x3",
+            "yaxis": "y3"
+        },
+        {
+            "marker": {
+                "color": [
+                    "#6D6875",
+                    "#264653"
+                ]
+            },
+            "showlegend": false,
+            "x": [
+                "NEGATIVE",
+                "POSITIVE"
+            ],
+            "y": [
+                32228137.402777776,
+                1901342.4032258065
+            ],
+            "type": "bar",
+            "xaxis": "x5",
+            "yaxis": "y5"
+        },
+        {
+            "marker": {
+                "color": [
+                    "#E63946",
+                    "#F4A261",
+                    "#2A9D8F",
+                    "#9C89B8",
+                    "#A8DADC",
+                    "#F0C808"
+                ]
+            },
+            "showlegend": false,
+            "x": [
+                "anger",
+                "fear",
+                "joy",
+                "love",
+                "sadness",
+                "surprise"
+            ],
+            "y": [
+                25572531.70625,
+                34219918.89655172,
+                21351123.413043477,
+                0.0,
+                1720738.5,
+                0.0
+            ],
+            "type": "bar",
+            "xaxis": "x4",
+            "yaxis": "y4"
+        },
+        {
+            "showscale": false,
+            "x": [
+                "anger",
+                "fear",
+                "joy",
+                "love",
+                "sadness",
+                "surprise"
+            ],
+            "y": [
+                "anger",
+                "fear",
+                "joy",
+                "love",
+                "sadness",
+                "surprise"
+            ],
+            "z": [
+                [
+                    0.0,
+                    0.000982165783550657,
+                    4.152281241542606e-06,
+                    0.033856865900073974,
+                    0.0004540073555408517,
+                    0.2654541137776654
+                ],
+                [
+                    0.000982165783550657,
+                    0.0,
+                    1.1620774239553248e-10,
+                    0.009182896204893792,
+                    2.676883439774823e-06,
+                    0.1904946357172898
+                ],
+                [
+                    4.152281241542606e-06,
+                    1.1620774239553248e-10,
+                    0.0,
+                    0.12978483138509722,
+                    0.3195594268198699,
+                    0.3192239295534359
+                ],
+                [
+                    0.033856865900073974,
+                    0.009182896204893792,
+                    0.12978483138509722,
+                    0.0,
+                    0.19553735621999924,
+                    0.395277359415086
+                ],
+                [
+                    0.0004540073555408517,
+                    2.676883439774823e-06,
+                    0.3195594268198699,
+                    0.19553735621999924,
+                    0.0,
+                    0.3186712294764455
+                ],
+                [
+                    0.2654541137776654,
+                    0.1904946357172898,
+                    0.3192239295534359,
+                    0.395277359415086,
+                    0.3186712294764455,
+                    0.0
+                ]
+            ],
+            "type": "heatmap",
+            "xaxis": "x6",
+            "yaxis": "y6"
+        },
+        {
+            "marker": {
+                "color": [
+                    "#6D6875",
+                    "#264653"
+                ]
+            },
+            "showlegend": false,
+            "x": [
+                "NEGATIVE",
+                "POSITIVE"
+            ],
+            "y": [
+                5.031693958333333,
+                1.9204639838709676
+            ],
+            "type": "bar",
+            "xaxis": "x8",
+            "yaxis": "y8"
+        },
+        {
+            "marker": {
+                "color": [
+                    "#E63946",
+                    "#F4A261",
+                    "#2A9D8F",
+                    "#9C89B8",
+                    "#A8DADC",
+                    "#F0C808"
+                ]
+            },
+            "showlegend": false,
+            "x": [
+                "anger",
+                "fear",
+                "joy",
+                "love",
+                "sadness",
+                "surprise"
+            ],
+            "y": [
+                4.7849741875,
+                4.545673293103448,
+                2.7021714347826085,
+                1.774187,
+                4.210675666666666,
+                0.06756
+            ],
+            "type": "bar",
+            "xaxis": "x7",
+            "yaxis": "y7"
+        },
+        {
+            "showscale": false,
+            "x": [
+                "anger",
+                "fear",
+                "joy",
+                "love",
+                "sadness",
+                "surprise"
+            ],
+            "y": [
+                "anger",
+                "fear",
+                "joy",
+                "love",
+                "sadness",
+                "surprise"
+            ],
+            "z": [
+                [
+                    0.0,
+                    1.9412361089591325e-08,
+                    1.236370249263122e-11,
+                    0.0021510004375344346,
+                    8.526493294156519e-05,
+                    0.031567283241780764
+                ],
+                [
+                    1.9412361089591325e-08,
+                    0.0,
+                    4.833032061558208e-26,
+                    1.712959381257379e-05,
+                    5.765706316419511e-11,
+                    0.006441627608619412
+                ],
+                [
+                    1.236370249263122e-11,
+                    4.833032061558208e-26,
+                    0.0,
+                    0.08828691349072014,
+                    0.7248747941717832,
+                    0.05845678375486751
+                ],
+                [
+                    0.0021510004375344346,
+                    1.712959381257379e-05,
+                    0.08828691349072014,
+                    0.0,
+                    0.058693130870150906,
+                    0.22071650495832615
+                ],
+                [
+                    8.526493294156519e-05,
+                    5.765706316419511e-11,
+                    0.7248747941717832,
+                    0.058693130870150906,
+                    0.0,
+                    0.03752112448787328
+                ],
+                [
+                    0.031567283241780764,
+                    0.006441627608619412,
+                    0.05845678375486751,
+                    0.22071650495832615,
+                    0.03752112448787328,
+                    0.0
+                ]
+            ],
+            "type": "heatmap",
+            "xaxis": "x9",
+            "yaxis": "y9"
+        }
+    ],
+    "layout": {
+        "template": {
+            "data": {
+                "histogram2dcontour": [
+                    {
+                        "type": "histogram2dcontour",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "choropleth": [
+                    {
+                        "type": "choropleth",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "histogram2d": [
+                    {
+                        "type": "histogram2d",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "heatmap": [
+                    {
+                        "type": "heatmap",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "heatmapgl": [
+                    {
+                        "type": "heatmapgl",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "contourcarpet": [
+                    {
+                        "type": "contourcarpet",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "contour": [
+                    {
+                        "type": "contour",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "surface": [
+                    {
+                        "type": "surface",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        },
+                        "colorscale": [
+                            [
+                                0.0,
+                                "#0d0887"
+                            ],
+                            [
+                                0.1111111111111111,
+                                "#46039f"
+                            ],
+                            [
+                                0.2222222222222222,
+                                "#7201a8"
+                            ],
+                            [
+                                0.3333333333333333,
+                                "#9c179e"
+                            ],
+                            [
+                                0.4444444444444444,
+                                "#bd3786"
+                            ],
+                            [
+                                0.5555555555555556,
+                                "#d8576b"
+                            ],
+                            [
+                                0.6666666666666666,
+                                "#ed7953"
+                            ],
+                            [
+                                0.7777777777777778,
+                                "#fb9f3a"
+                            ],
+                            [
+                                0.8888888888888888,
+                                "#fdca26"
+                            ],
+                            [
+                                1.0,
+                                "#f0f921"
+                            ]
+                        ]
+                    }
+                ],
+                "mesh3d": [
+                    {
+                        "type": "mesh3d",
+                        "colorbar": {
+                            "outlinewidth": 0,
+                            "ticks": ""
+                        }
+                    }
+                ],
+                "scatter": [
+                    {
+                        "fillpattern": {
+                            "fillmode": "overlay",
+                            "size": 10,
+                            "solidity": 0.2
+                        },
+                        "type": "scatter"
+                    }
+                ],
+                "parcoords": [
+                    {
+                        "type": "parcoords",
+                        "line": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterpolargl": [
+                    {
+                        "type": "scatterpolargl",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "bar": [
+                    {
+                        "error_x": {
+                            "color": "#2a3f5f"
+                        },
+                        "error_y": {
+                            "color": "#2a3f5f"
+                        },
+                        "marker": {
+                            "line": {
+                                "color": "#E5ECF6",
+                                "width": 0.5
+                            },
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "bar"
+                    }
+                ],
+                "scattergeo": [
+                    {
+                        "type": "scattergeo",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterpolar": [
+                    {
+                        "type": "scatterpolar",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "histogram": [
+                    {
+                        "marker": {
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "histogram"
+                    }
+                ],
+                "scattergl": [
+                    {
+                        "type": "scattergl",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatter3d": [
+                    {
+                        "type": "scatter3d",
+                        "line": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        },
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattermapbox": [
+                    {
+                        "type": "scattermapbox",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scatterternary": [
+                    {
+                        "type": "scatterternary",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "scattercarpet": [
+                    {
+                        "type": "scattercarpet",
+                        "marker": {
+                            "colorbar": {
+                                "outlinewidth": 0,
+                                "ticks": ""
+                            }
+                        }
+                    }
+                ],
+                "carpet": [
+                    {
+                        "aaxis": {
+                            "endlinecolor": "#2a3f5f",
+                            "gridcolor": "white",
+                            "linecolor": "white",
+                            "minorgridcolor": "white",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "baxis": {
+                            "endlinecolor": "#2a3f5f",
+                            "gridcolor": "white",
+                            "linecolor": "white",
+                            "minorgridcolor": "white",
+                            "startlinecolor": "#2a3f5f"
+                        },
+                        "type": "carpet"
+                    }
+                ],
+                "table": [
+                    {
+                        "cells": {
+                            "fill": {
+                                "color": "#EBF0F8"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "header": {
+                            "fill": {
+                                "color": "#C8D4E3"
+                            },
+                            "line": {
+                                "color": "white"
+                            }
+                        },
+                        "type": "table"
+                    }
+                ],
+                "barpolar": [
+                    {
+                        "marker": {
+                            "line": {
+                                "color": "#E5ECF6",
+                                "width": 0.5
+                            },
+                            "pattern": {
+                                "fillmode": "overlay",
+                                "size": 10,
+                                "solidity": 0.2
+                            }
+                        },
+                        "type": "barpolar"
+                    }
+                ],
+                "pie": [
+                    {
+                        "automargin": true,
+                        "type": "pie"
+                    }
+                ]
+            },
+            "layout": {
+                "autotypenumbers": "strict",
+                "colorway": [
+                    "#636efa",
+                    "#EF553B",
+                    "#00cc96",
+                    "#ab63fa",
+                    "#FFA15A",
+                    "#19d3f3",
+                    "#FF6692",
+                    "#B6E880",
+                    "#FF97FF",
+                    "#FECB52"
+                ],
+                "font": {
+                    "color": "#2a3f5f"
+                },
+                "hovermode": "closest",
+                "hoverlabel": {
+                    "align": "left"
+                },
+                "paper_bgcolor": "white",
+                "plot_bgcolor": "#E5ECF6",
+                "polar": {
+                    "bgcolor": "#E5ECF6",
+                    "angularaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "radialaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    }
+                },
+                "ternary": {
+                    "bgcolor": "#E5ECF6",
+                    "aaxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "baxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    },
+                    "caxis": {
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "ticks": ""
+                    }
+                },
+                "coloraxis": {
+                    "colorbar": {
+                        "outlinewidth": 0,
+                        "ticks": ""
+                    }
+                },
+                "colorscale": {
+                    "sequential": [
+                        [
+                            0.0,
+                            "#0d0887"
+                        ],
+                        [
+                            0.1111111111111111,
+                            "#46039f"
+                        ],
+                        [
+                            0.2222222222222222,
+                            "#7201a8"
+                        ],
+                        [
+                            0.3333333333333333,
+                            "#9c179e"
+                        ],
+                        [
+                            0.4444444444444444,
+                            "#bd3786"
+                        ],
+                        [
+                            0.5555555555555556,
+                            "#d8576b"
+                        ],
+                        [
+                            0.6666666666666666,
+                            "#ed7953"
+                        ],
+                        [
+                            0.7777777777777778,
+                            "#fb9f3a"
+                        ],
+                        [
+                            0.8888888888888888,
+                            "#fdca26"
+                        ],
+                        [
+                            1.0,
+                            "#f0f921"
+                        ]
+                    ],
+                    "sequentialminus": [
+                        [
+                            0.0,
+                            "#0d0887"
+                        ],
+                        [
+                            0.1111111111111111,
+                            "#46039f"
+                        ],
+                        [
+                            0.2222222222222222,
+                            "#7201a8"
+                        ],
+                        [
+                            0.3333333333333333,
+                            "#9c179e"
+                        ],
+                        [
+                            0.4444444444444444,
+                            "#bd3786"
+                        ],
+                        [
+                            0.5555555555555556,
+                            "#d8576b"
+                        ],
+                        [
+                            0.6666666666666666,
+                            "#ed7953"
+                        ],
+                        [
+                            0.7777777777777778,
+                            "#fb9f3a"
+                        ],
+                        [
+                            0.8888888888888888,
+                            "#fdca26"
+                        ],
+                        [
+                            1.0,
+                            "#f0f921"
+                        ]
+                    ],
+                    "diverging": [
+                        [
+                            0,
+                            "#8e0152"
+                        ],
+                        [
+                            0.1,
+                            "#c51b7d"
+                        ],
+                        [
+                            0.2,
+                            "#de77ae"
+                        ],
+                        [
+                            0.3,
+                            "#f1b6da"
+                        ],
+                        [
+                            0.4,
+                            "#fde0ef"
+                        ],
+                        [
+                            0.5,
+                            "#f7f7f7"
+                        ],
+                        [
+                            0.6,
+                            "#e6f5d0"
+                        ],
+                        [
+                            0.7,
+                            "#b8e186"
+                        ],
+                        [
+                            0.8,
+                            "#7fbc41"
+                        ],
+                        [
+                            0.9,
+                            "#4d9221"
+                        ],
+                        [
+                            1,
+                            "#276419"
+                        ]
+                    ]
+                },
+                "xaxis": {
+                    "gridcolor": "white",
+                    "linecolor": "white",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "white",
+                    "automargin": true,
+                    "zerolinewidth": 2
+                },
+                "yaxis": {
+                    "gridcolor": "white",
+                    "linecolor": "white",
+                    "ticks": "",
+                    "title": {
+                        "standoff": 15
+                    },
+                    "zerolinecolor": "white",
+                    "automargin": true,
+                    "zerolinewidth": 2
+                },
+                "scene": {
+                    "xaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    },
+                    "yaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    },
+                    "zaxis": {
+                        "backgroundcolor": "#E5ECF6",
+                        "gridcolor": "white",
+                        "linecolor": "white",
+                        "showbackground": true,
+                        "ticks": "",
+                        "zerolinecolor": "white",
+                        "gridwidth": 2
+                    }
+                },
+                "shapedefaults": {
+                    "line": {
+                        "color": "#2a3f5f"
+                    }
+                },
+                "annotationdefaults": {
+                    "arrowcolor": "#2a3f5f",
+                    "arrowhead": 0,
+                    "arrowwidth": 1
+                },
+                "geo": {
+                    "bgcolor": "white",
+                    "landcolor": "#E5ECF6",
+                    "subunitcolor": "white",
+                    "showland": true,
+                    "showlakes": true,
+                    "lakecolor": "white"
+                },
+                "title": {
+                    "x": 0.05
+                },
+                "mapbox": {
+                    "style": "light"
+                }
+            }
+        },
+        "xaxis": {
+            "anchor": "y",
+            "domain": [
+                0.0,
+                0.2888888888888889
+            ]
+        },
+        "yaxis": {
+            "anchor": "x",
+            "domain": [
+                0.7777777777777778,
+                1.0
+            ],
+            "title": {
+                "text": "Average Rating"
+            }
+        },
+        "xaxis2": {
+            "anchor": "y2",
+            "domain": [
+                0.35555555555555557,
+                0.6444444444444445
+            ]
+        },
+        "yaxis2": {
+            "anchor": "x2",
+            "domain": [
+                0.7777777777777778,
+                1.0
+            ]
+        },
+        "xaxis3": {
+            "anchor": "y3",
+            "domain": [
+                0.7111111111111111,
+                1.0
+            ]
+        },
+        "yaxis3": {
+            "anchor": "x3",
+            "domain": [
+                0.7777777777777778,
+                1.0
+            ]
+        },
+        "xaxis4": {
+            "anchor": "y4",
+            "domain": [
+                0.0,
+                0.2888888888888889
+            ]
+        },
+        "yaxis4": {
+            "anchor": "x4",
+            "domain": [
+                0.3888888888888889,
+                0.6111111111111112
+            ],
+            "title": {
+                "text": "Average Box Office"
+            }
+        },
+        "xaxis5": {
+            "anchor": "y5",
+            "domain": [
+                0.35555555555555557,
+                0.6444444444444445
+            ]
+        },
+        "yaxis5": {
+            "anchor": "x5",
+            "domain": [
+                0.3888888888888889,
+                0.6111111111111112
+            ]
+        },
+        "xaxis6": {
+            "anchor": "y6",
+            "domain": [
+                0.7111111111111111,
+                1.0
+            ]
+        },
+        "yaxis6": {
+            "anchor": "x6",
+            "domain": [
+                0.3888888888888889,
+                0.6111111111111112
+            ]
+        },
+        "xaxis7": {
+            "anchor": "y7",
+            "domain": [
+                0.0,
+                0.2888888888888889
+            ]
+        },
+        "yaxis7": {
+            "anchor": "x7",
+            "domain": [
+                0.0,
+                0.22222222222222224
+            ],
+            "title": {
+                "text": "Average Popularity"
+            }
+        },
+        "xaxis8": {
+            "anchor": "y8",
+            "domain": [
+                0.35555555555555557,
+                0.6444444444444445
+            ]
+        },
+        "yaxis8": {
+            "anchor": "x8",
+            "domain": [
+                0.0,
+                0.22222222222222224
+            ]
+        },
+        "xaxis9": {
+            "anchor": "y9",
+            "domain": [
+                0.7111111111111111,
+                1.0
+            ]
+        },
+        "yaxis9": {
+            "anchor": "x9",
+            "domain": [
+                0.0,
+                0.22222222222222224
+            ]
+        },
+        "annotations": [
+            {
+                "font": {
+                    "size": 16
+                },
+                "showarrow": false,
+                "text": "Average Movie Rating by Most Frequent Emotion",
+                "x": 0.14444444444444446,
+                "xanchor": "center",
+                "xref": "paper",
+                "y": 1.0,
+                "yanchor": "bottom",
+                "yref": "paper"
+            },
+            {
+                "font": {
+                    "size": 16
+                },
+                "showarrow": false,
+                "text": "Average Movie Rating by Overall Sentiment",
+                "x": 0.5,
+                "xanchor": "center",
+                "xref": "paper",
+                "y": 1.0,
+                "yanchor": "bottom",
+                "yref": "paper"
+            },
+            {
+                "font": {
+                    "size": 16
+                },
+                "showarrow": false,
+                "text": "P-value Ratings-Emotions",
+                "x": 0.8555555555555556,
+                "xanchor": "center",
+                "xref": "paper",
+                "y": 1.0,
+                "yanchor": "bottom",
+                "yref": "paper"
+            },
+            {
+                "font": {
+                    "size": 16
+                },
+                "showarrow": false,
+                "text": "Box Office by Overall Sentiment",
+                "x": 0.14444444444444446,
+                "xanchor": "center",
+                "xref": "paper",
+                "y": 0.6111111111111112,
+                "yanchor": "bottom",
+                "yref": "paper"
+            },
+            {
+                "font": {
+                    "size": 16
+                },
+                "showarrow": false,
+                "text": "Box Office by Most Frequent Emotion",
+                "x": 0.5,
+                "xanchor": "center",
+                "xref": "paper",
+                "y": 0.6111111111111112,
+                "yanchor": "bottom",
+                "yref": "paper"
+            },
+            {
+                "font": {
+                    "size": 16
+                },
+                "showarrow": false,
+                "text": "P-value BoxOffice-Emotions",
+                "x": 0.8555555555555556,
+                "xanchor": "center",
+                "xref": "paper",
+                "y": 0.6111111111111112,
+                "yanchor": "bottom",
+                "yref": "paper"
+            },
+            {
+                "font": {
+                    "size": 16
+                },
+                "showarrow": false,
+                "text": "Popularity by Overall Sentiment",
+                "x": 0.14444444444444446,
+                "xanchor": "center",
+                "xref": "paper",
+                "y": 0.22222222222222224,
+                "yanchor": "bottom",
+                "yref": "paper"
+            },
+            {
+                "font": {
+                    "size": 16
+                },
+                "showarrow": false,
+                "text": "Popularity by Most Frequent Emotion",
+                "x": 0.5,
+                "xanchor": "center",
+                "xref": "paper",
+                "y": 0.22222222222222224,
+                "yanchor": "bottom",
+                "yref": "paper"
+            },
+            {
+                "font": {
+                    "size": 16
+                },
+                "showarrow": false,
+                "text": "P-value Popularity-Emotions",
+                "x": 0.8555555555555556,
+                "xanchor": "center",
+                "xref": "paper",
+                "y": 0.22222222222222224,
+                "yanchor": "bottom",
+                "yref": "paper"
+            }
+        ],
+        "title": {
+            "text": "Analysis by Emotion and Sentiment World War 2"
+        },
+        "height": 800,
+        "width": 1000
+    }
+}

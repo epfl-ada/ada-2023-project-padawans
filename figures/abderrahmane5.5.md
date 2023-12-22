@@ -1,0 +1,1 @@
+##### Comparative analysis of movie sentiments and emotions for films related to Afghanistan, Iraq, WW2, Cold War, Vietnam and Nazi themes.
