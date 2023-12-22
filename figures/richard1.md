@@ -7,7 +7,3 @@ To do this, we first need to define how representation of a certain demographic 
 
 
 
-
-
-#### World War I and World War II ####
-

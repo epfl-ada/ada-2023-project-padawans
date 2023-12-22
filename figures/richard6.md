@@ -1,1 +1,3 @@
-test
+The peak of representation happens between 5 and 10 years after the beginning of the conflict for WWI, WWII, Iraq and Afghanistan War, but much later for the Cold War and Vietnam War. The percieved intensity of the conflict could be an explaining factor for this phenomenom. The higher mediatisation of the more recent wars could highten the percieved intensity of a conflict even when stakes are much lower than for WWI and WWII, and yet recieve a similar increase in representation. Slower conflicts like the Cold war don't incite as much interest.
+
+## US bias

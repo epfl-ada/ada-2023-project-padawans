@@ -189,6 +189,14 @@ def social_and_demographic_groups():
     intro_markdown = read_markdown_file("figures/richard6.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
+    with open('figures/ethnicity-representation_us_bias.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    intro_markdown = read_markdown_file("figures/richard7.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+
 
 def ratings_socio_political():
 
