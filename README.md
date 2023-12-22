@@ -1,10 +1,10 @@
 # Unveiling socio-political reflections in twentieth century movies
 
-[Data Story] (https://ada-2023-project-padawans-8bq993byh5h9xcgsyrauxz.streamlit.app/)
+[Data Story](https://ada-2023-project-padawans-8bq993byh5h9xcgsyrauxz.streamlit.app/)
 
 ## Abstract
 
-We want to investigate the extent to which movies serve as mirrors to the social and political climate of the twentieth century. Through a multidimensional analysis of the combined dataset of CMU Movie Summary Corpus and IMDB (http://www.cs.cmu.edu/~ark/personas/), encompassing genre trends and thematic content, we discern nuanced patterns of socio-political reflection within movies narratives. Employing advanced natural language processing techniques, we dissect plot summaries to uncover implicit and explicit references to key societal issues. Our findings illuminate the intricate interplay between movies and the evolving socio-political landscape, shedding light on the enduring impact of movies as a medium of reflection, commentary, and influence. This research not only advances our comprehension of film as a cultural artifact but also underscores its potential as a historical and sociological archive of the twentieth century.
+We want to investigate the extent to which movies serve as mirrors to the social and political climate of the twentieth century. Through a multidimensional analysis of the combined dataset of [CMU Movie Summary Corpus](http://www.cs.cmu.edu/~ark/personas/) and IMDB, encompassing genre trends and thematic content, we discern nuanced patterns of socio-political reflection within movies narratives. Employing advanced natural language processing techniques, we dissect plot summaries to uncover implicit and explicit references to key societal issues. Our findings illuminate the intricate interplay between movies and the evolving socio-political landscape, shedding light on the enduring impact of movies as a medium of reflection, commentary, and influence. This research not only advances our comprehension of film as a cultural artifact but also underscores its potential as a historical and sociological archive of the twentieth century.
 
 
 ## Research Questions:
@@ -58,7 +58,7 @@ We want to investigate the extent to which movies serve as mirrors to the social
   - Analyze how the critical reception of movies in these categories has changed over time
   - Conduct statistical tests (like t-tests or ANOVA) to see if there are significant differences in ratings between the two categories.
 
-**Proposed Timeline**
+## Proposed Timeline
   1. Step 1 - Answer to the five questions and give enough proofs (eg. plots, stats, etc...) One question per person
   2. Step 2 - Merge all findings and create a story out of them, and go deeper if an interesting thing is found
   3. Step 3 - Create the website and add the story
@@ -67,7 +67,7 @@ We want to investigate the extent to which movies serve as mirrors to the social
 * Step 2 - 24.11 to 01.12
 * Step 3 - 01.11 to 08.12
 
-**Organisation within the team**
+## Organisation within the team
 
 Although we organised the work so that each person works on one research question, the work in general was done in group
 - Maxime Chanson : Correlation Analysis of Genres and Socio-Political Events
