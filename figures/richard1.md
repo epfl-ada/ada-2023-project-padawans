@@ -5,15 +5,12 @@ To do this, we first need to define how representation of a certain demographic 
 
 > In combination with prior lemmatization and part of speech analysis to isolate the **Adjectives** and **Proper Nouns** and optimise the speed of search. 
 
-Some key players 
-We will use relative word count so that we can decouple from the natural increase in number of film during the years.
 
+
+Lets use relative word count so that we can decouple from the natural increase in number of film during the years.
 > Word count of a group / total **Adjectives** and **Proper Nouns** count
-
 We also choosed to apply a moving average of 5 years over the data.
-
 > Overall, the data is quite scarce before the 80' especially for countries outside the western world, leading to very high short term volatility. Smoothing the curve with a moving average mitigates this issue.
 
 #### World War I and World War II ####
-
 
