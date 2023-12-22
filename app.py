@@ -36,15 +36,16 @@ def read_markdown_file(markdown_file):
 
 def overview():
     st.header('Part 1: Overview')
-    st.write("""The "Great Dictator" directed by and starring Charlie Chaplin in 1940 is a famous movie made 
-             during World War II which vehiculates critique of facism and dictatorship, an anti-war message and an iconic message for humanity. 
-             This movie is a great example amongst many which show clearly how movies can be used as a medium for social and political commentary, 
-             influencing public opinion and bringing attention to critical global issues. In this project, we want to investigate the extent to 
-             which movies serve as mirrors to the social and political climate of the twentieth century.""")
+    st.write("""Imagine a world where cinema does more than entertain; it shapes the course of history. In 1982, the release of "Gandhi," directed by Richard Attenborough, became not just a cinematic event but a cultural phenomenon. As the movie brought to life the struggles and philosophies of Mahatma Gandhi, it reignited a conversation about non-violence and civil rights across the globe. In South Africa, it reportedly influenced movements against apartheid, demonstrating the profound effect a movie can have on the socio-political landscape.
+
+This is not an isolated instance. Throughout the twentieth century, numerous movies have echoed the sentiments of their times, influenced public opinion, and even swayed the course of political events. From the bold anti-fascist statement in Charlie Chaplin’s "The Great Dictator" to the nuanced portrayal of the Vietnam War in "Apocalypse Now," movies have been a powerful medium for socio-political commentary and change.""")
     col1, col2, col3 = st.columns(3)
     col1, col2, col3 = st.columns([1,2,1])
     with col2:
         st.image('giphy.gif', width=480, use_column_width=True)
+    st.write("""In this project, we delve into the rich interplay between movies and the socio-political fabric of the twentieth century. We aim to uncover how movies have reflected, influenced, and sometimes even transformed the socio-political climate of their times. Our exploration begins with an analysis of socio-political themes, identifying and understanding the prevalent motifs in movies. We then examine the correlation between movies genres and major socio-political events, exploring how cinematic expressions respond to and influence historical contexts. The study also investigates the representation of diverse social and demographic groups in movies, reflecting the evolving societal narratives. Additionally, we assess public perception and emotional responses to socio-political themes in movies through sentiment analysis. Finally, we evaluate how audiences and critics have received films with socio-political themes, providing insight into their impact and reception.
+
+Our journey will conclude with a synthesis of these findings, revealing the powerful role movies have played as both a reflector and an influencer of socio-political narratives. Join us as we unravel the stories behind the screen, uncovering the hidden dialogues between movies and society.""")
     st.map(data)
 
 
@@ -166,7 +167,16 @@ def ratings_socio_political():
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-    intro_markdown = read_markdown_file("figures/koami2.md")
+    intro_markdown = read_markdown_file("figures/koami3.md")
+    st.markdown(intro_markdown, unsafe_allow_html=True)
+    
+    with open('figures/bar_emotions_figure.json', 'r') as json_file2:
+        fig2_json = json.load(json_file2)
+    
+    fig2 = go.Figure(fig2_json)
+    st.plotly_chart(fig2)
+    
+    intro_markdown = read_markdown_file("figures/koami4.md")
     st.markdown(intro_markdown, unsafe_allow_html=True)
 
 def sentiment():
@@ -202,7 +212,28 @@ def sentiment():
 
 def conclusions():
     st.header('Part 5: Conclusions')
-    st.write('The final section where you summarize the findings and conclusions of the app.')
+    st.write("""As the final reel of our cinematic journey winds to a close, we find ourselves not at an end, but at a profound moment of synthesis and realization. Our exploration through the lens of twentieth-century movies has unveiled a landscape rich in diversity, challenge, and change. We have seen how movies are not mere reflections of the times but also powerful catalysts that can shape and redefine the socio-political narrative.
+
+The synthesis of our results paints a vivid tapestry. In analyzing socio-political themes, we observed the evolution of cinematic storytelling, mirroring the changing contours of societal and political concerns. From the daring satire of "The Great Dictator" to the introspective depth of "Gandhi," movies have served as barometers of public sentiment, capturing the zeitgeist of their eras.
+
+Our correlation analysis of genres and socio-political events further highlighted how movies adapt and respond to the world's heartbeat. The flux of genres, from the rise of war dramas during global conflicts to the emergence of dystopian movies in times of political uncertainty, underscores movies's responsiveness to the human condition.
+
+In examining the representation of social and demographic groups, we uncovered a narrative of progress and ongoing challenges. While there has been a gradual increase in diversity and representation, the journey towards a truly inclusive cinematic world remains a work in progress, reflecting wider societal struggles.
+
+Sentiment analysis brought to light the emotional impact of socio-political themes in movies. Movies with powerful messages resonated deeply with audiences, influencing perceptions and, in many cases, spurring dialogue and action.
+
+Finally, our ratings analysis provided insight into how socio-political themes are received and valued by audiences and critics alike. This metric offered a unique window into the public's engagement with and reaction to movies that dared to address significant socio-political issues.
+
+In conclusion, our exploration has revealed that movies, in their most impactful moments, transcends entertainment. It becomes a conduit for change, a voice for the voiceless, and a mirror reflecting our collective hopes, fears, and aspirations. The stories told on the silver screen are more than just tales; they are fragments of our shared history and indicators of our societal trajectory.""")
+
+    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns([1,2,1])
+    with col2:
+        st.image('movies_collage.png', width=480, use_column_width=True)
+
+    st.write("""As we step out from this cinematic exploration, we are left with a profound appreciation for the medium's power and responsibility. Movies do not just belong to the realm of art; they are integral threads in the fabric of socio-political discourse. They challenge us, inspire us, and most importantly, remind us of the unending dialogue between art and life, movies and society.
+
+In the flickering light of the projector, we have witnessed a world in motion, a narrative of humanity unfolding. And as the screen fades to black, we are left not only in awe but also with a newfound understanding of the indelible imprint cinema leaves on the pages of our collective history.""")
 
 def main():
     st.title('My Streamlit App')
