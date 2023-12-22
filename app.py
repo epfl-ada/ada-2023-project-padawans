@@ -52,11 +52,34 @@ Our journey will conclude with a synthesis of these findings, revealing the powe
 def correlation_analysis():
     st.header('Part 2: Data Exploration')
 
-    with open('figures/release_year_histo_max.json', 'r') as json_file:
+    text = read_markdown_file("figures/MAX_1 - Copie.md")
+    st.markdown(text, unsafe_allow_html=True)
+
+    with open('figures/Crelease_year_histo_max.json', 'r') as json_file:
         fig_json = json.load(json_file)
 
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
+
+    text = read_markdown_file("figures/MAX_1 - Copie (2).md")
+    st.markdown(text, unsafe_allow_html=True)
+
+    with open('figures/Dtop10_release_histo.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+        fig = go.Figure(fig_json)
+        st.plotly_chart(fig)
+
+    text = read_markdown_file("figures/MAX_1 - Copie (3).md")
+    st.markdown(text, unsafe_allow_html=True)
+
+    with open('figures/MAX_Genres_5y_barplot_withothernondisplayed.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    text = read_markdown_file("figures/MAX_1 - Copie (4).md")
+    st.markdown(text, unsafe_allow_html=True)
+    
 
     with open('figures/boxoffice_percentage_max.json', 'r') as json_file:
         fig_json = json.load(json_file)
@@ -64,33 +87,74 @@ def correlation_analysis():
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-    with open('figures/top10_release_histo.json', 'r') as json_file:
-        fig_json = json.load(json_file)
+    text = read_markdown_file("figures/MAX_1 - Copie (5).md")
+    st.markdown(text, unsafe_allow_html=True)
 
-    fig = go.Figure(fig_json)
-    st.plotly_chart(fig)
-
-    with open('figures/barplot_genres_fix_wo_other.json', 'r') as json_file:
+    with open('figures/MAX_Fboxofficeshare_genre_total_max.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-    with open('figures/Fboxofficeshare_top5_genres_5year_intervals_1910_2010.json', 'r') as json_file:
+    text = read_markdown_file("figures/MAX_1 - Copie (6).md")
+    st.markdown(text, unsafe_allow_html=True)
+
+    with open('figures/MAx_scatter_boxoffice_vs_ratingbruh.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
+
+    text = read_markdown_file("figures/MAX_1 - Copie (7).md")
+    st.markdown(text, unsafe_allow_html=True)
+
+    with open('figures/Max_boxoffice_vs_year.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    text = read_markdown_file("figures/MAX_1 - Copie (8).md")
+    st.markdown(text, unsafe_allow_html=True)
+
+    with open('figures/Max_reg.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/Max_r2_reg.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    text = read_markdown_file("figures/MAX_1 - Copie (9).md")
+    st.markdown(text, unsafe_allow_html=True)
+
+    with open('figures/Max_reg_rating.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    with open('figures/Max_r2_reg_rating.json', 'r') as json_file:
+        fig_json = json.load(json_file)
+    fig = go.Figure(fig_json)
+    st.plotly_chart(fig)
+
+    text = read_markdown_file("figures/MAX_1 - Copie (10).md")
+    st.markdown(text, unsafe_allow_html=True)
 
     with open('figures/Gcorrelplot_max.json', 'r') as json_file:
         fig_json = json.load(json_file)
     fig = go.Figure(fig_json)
     st.plotly_chart(fig)
 
-    intro_markdown = read_markdown_file("figures/max_correl.md")
-    st.markdown(intro_markdown, unsafe_allow_html=True)
+    text = read_markdown_file("figures/MAX_1 - Copie (11).md")
+    st.markdown(text, unsafe_allow_html=True)
 
+    text = read_markdown_file("figures/MAX_1 - Copie (12).md")
+    st.markdown(text, unsafe_allow_html=True)
+
+    text = read_markdown_file("figures/MAX_1 - Copie (13).md")
+    st.markdown(text, unsafe_allow_html=True)
     
 
-    st.write('In this section, you would typically include widgets for data exploration.')
 
 def socio_political():
     st.header('Part 2:  Analysis of Socio-Political Theme')
@@ -240,7 +304,7 @@ def main():
 
     #Options Menu
     with st.sidebar:
-        selected = option_menu('Topics', ['Overview','Correlation Analysis of Genres and Socio-Political Events', "Analysis of Socio-Political Themes", "Social and Demographic Groups", 'Sentiment', 'Ratings analysis of socio-political themed movies', 'Conclusions'], 
+        selected = option_menu('Topics', ['Overview','Data Exploration', "Analysis of Socio-Political Themes", "Social and Demographic Groups", 'Sentiment', 'Ratings analysis of socio-political themed movies', 'Conclusions'], 
             icons=['0-square-fill','1-square-fill','2-square-fill', '3-square-fill','4-square-fill','5-square-fill'],menu_icon='intersect', default_index=0)
 
     if selected == "Overview":
@@ -250,7 +314,7 @@ def main():
         social_and_demographic_groups()
         sentiment()
         ratings_socio_political()
-    elif selected == "Correlation Analysis of Genres and Socio-Political Events":
+    elif selected == "Data Exploration":
         correlation_analysis()
     elif selected == "Analysis of Socio-Political Themes":
         socio_political()

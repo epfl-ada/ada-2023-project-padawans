@@ -1,0 +1,1 @@
+But, is money a good indicator of people taste? If yes, we should see a correlation between the boxoffice revenue and the ratings. To do so, we increased the dataset with ratings coming from IMDb. Here is the scatter plot. Interestingly, we cannot see a clear correlation between the revenue and the ratings, as shows the distribution and the R-squared.
